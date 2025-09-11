@@ -4,78 +4,62 @@ import { useLanguage } from "@/contexts/language-context";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { UserPlus, Search, FileText, CheckCircle, DollarSign, Trophy, Building, Clock, HeadphonesIcon, Gamepad2, Shield } from "lucide-react";
-
 const Researchers = () => {
-  const { t } = useLanguage();
-
-  const steps = [
-    {
-      number: "1",
-      icon: <UserPlus className="h-8 w-8" />,
-      title: t('researchers.step1.title'),
-      description: t('researchers.step1.desc')
-    },
-    {
-      number: "2",
-      icon: <Search className="h-8 w-8" />,
-      title: t('researchers.step2.title'),
-      description: t('researchers.step2.desc')
-    },
-    {
-      number: "3",
-      icon: <FileText className="h-8 w-8" />,
-      title: t('researchers.step3.title'),
-      description: t('researchers.step3.desc')
-    },
-    {
-      number: "4",
-      icon: <CheckCircle className="h-8 w-8" />,
-      title: t('researchers.step4.title'),
-      description: t('researchers.step4.desc')
-    },
-    {
-      number: "5",
-      icon: <DollarSign className="h-8 w-8" />,
-      title: t('researchers.step5.title'),
-      description: t('researchers.step5.desc')
-    }
-  ];
-
-  const benefits = [
-    {
-      icon: <Trophy className="h-8 w-8" />,
-      title: t('researchers.benefit1.title'),
-      description: t('researchers.benefit1.desc')
-    },
-    {
-      icon: <Building className="h-8 w-8" />,
-      title: t('researchers.benefit2.title'),
-      description: t('researchers.benefit2.desc')
-    },
-    {
-      icon: <Clock className="h-8 w-8" />,
-      title: t('researchers.benefit3.title'),
-      description: t('researchers.benefit3.desc')
-    },
-    {
-      icon: <HeadphonesIcon className="h-8 w-8" />,
-      title: t('researchers.benefit4.title'),
-      description: t('researchers.benefit4.desc')
-    },
-    {
-      icon: <Gamepad2 className="h-8 w-8" />,
-      title: t('researchers.benefit5.title'),
-      description: t('researchers.benefit5.desc')
-    },
-    {
-      icon: <Shield className="h-8 w-8" />,
-      title: t('researchers.benefit6.title'),
-      description: t('researchers.benefit6.desc')
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-muted">
+  const {
+    t
+  } = useLanguage();
+  const steps = [{
+    number: "1",
+    icon: <UserPlus className="h-8 w-8" />,
+    title: t('researchers.step1.title'),
+    description: t('researchers.step1.desc')
+  }, {
+    number: "2",
+    icon: <Search className="h-8 w-8" />,
+    title: t('researchers.step2.title'),
+    description: t('researchers.step2.desc')
+  }, {
+    number: "3",
+    icon: <FileText className="h-8 w-8" />,
+    title: t('researchers.step3.title'),
+    description: t('researchers.step3.desc')
+  }, {
+    number: "4",
+    icon: <CheckCircle className="h-8 w-8" />,
+    title: t('researchers.step4.title'),
+    description: t('researchers.step4.desc')
+  }, {
+    number: "5",
+    icon: <DollarSign className="h-8 w-8" />,
+    title: t('researchers.step5.title'),
+    description: t('researchers.step5.desc')
+  }];
+  const benefits = [{
+    icon: <Trophy className="h-8 w-8" />,
+    title: t('researchers.benefit1.title'),
+    description: t('researchers.benefit1.desc')
+  }, {
+    icon: <Building className="h-8 w-8" />,
+    title: t('researchers.benefit2.title'),
+    description: t('researchers.benefit2.desc')
+  }, {
+    icon: <Clock className="h-8 w-8" />,
+    title: t('researchers.benefit3.title'),
+    description: t('researchers.benefit3.desc')
+  }, {
+    icon: <HeadphonesIcon className="h-8 w-8" />,
+    title: t('researchers.benefit4.title'),
+    description: t('researchers.benefit4.desc')
+  }, {
+    icon: <Gamepad2 className="h-8 w-8" />,
+    title: t('researchers.benefit5.title'),
+    description: t('researchers.benefit5.desc')
+  }, {
+    icon: <Shield className="h-8 w-8" />,
+    title: t('researchers.benefit6.title'),
+    description: t('researchers.benefit6.desc')
+  }];
+  return <div className="min-h-screen bg-muted">
       <div className="max-w-7xl mx-auto bg-background shadow-lg">
         <Navbar />
         <main className="pt-16">
@@ -83,10 +67,10 @@ const Researchers = () => {
           <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
             <div className="absolute inset-0 opacity-30">
               <div className="absolute inset-0" style={{
-                backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
+              backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
                                  linear-gradient(150deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1))`,
-                backgroundSize: '24px 24px'
-              }}></div>
+              backgroundSize: '24px 24px'
+            }}></div>
             </div>
             <div className="container mx-auto px-4 max-w-6xl relative h-full">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 h-full">
@@ -99,11 +83,7 @@ const Researchers = () => {
                   </p>
                 </div>
                 <div className="hidden xl:flex items-end justify-center">
-                  <img 
-                    src="/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png" 
-                    alt="Ethical hacker researcher working on laptop"
-                    className="max-w-full h-auto block"
-                  />
+                  <img src="/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png" alt="Ethical hacker researcher working on laptop" className="max-w-full h-auto block" />
                 </div>
               </div>
             </div>
@@ -119,13 +99,10 @@ const Researchers = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                {steps.map((step, index) => (
-                  <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-blue/20 hover:border-blue/40 bg-blue backdrop-blur-sm">
+                {steps.map((step, index) => <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-blue/20 hover:border-blue/40 bg-blue backdrop-blur-sm">
                     <CardContent className="p-6 text-center h-full flex flex-col">
                       <div className="flex justify-center mb-4">
-                        <div className="w-12 h-12 bg-background/20 rounded-full flex items-center justify-center text-background font-bold text-xl">
-                          {step.number}
-                        </div>
+                        
                       </div>
                       <div className="flex justify-center mb-4">
                         <div className="p-3 rounded-full bg-background/20 text-background">
@@ -139,8 +116,7 @@ const Researchers = () => {
                         {step.description}
                       </p>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </div>
           </section>
@@ -149,8 +125,7 @@ const Researchers = () => {
           <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-background">
             <div className="container mx-auto px-4 max-w-6xl">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                {benefits.map((benefit, index) => (
-                  <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20">
+                {benefits.map((benefit, index) => <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20">
                     <CardHeader>
                       <div className="flex items-center gap-3">
                         <div className="p-2 rounded-lg bg-primary/10 text-primary">
@@ -166,8 +141,7 @@ const Researchers = () => {
                         {benefit.description}
                       </p>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
 
               {/* Requirements Section */}
@@ -210,8 +184,6 @@ const Researchers = () => {
         </main>
         <Footer />
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Researchers;
