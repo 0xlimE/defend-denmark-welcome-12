@@ -13,15 +13,16 @@ const BugBounty = () => {
         <Navbar />
         <main className="pt-16">
           {/* Hero Section */}
-          <section className="h-[500px] md:h-[600px] bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden flex items-center">
-            <div className="absolute inset-0 opacity-20">
+          <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+            <div className="absolute inset-0 opacity-30">
               <div className="absolute inset-0" style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
+                backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
+                                 linear-gradient(150deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1))`,
                 backgroundSize: '24px 24px'
               }}></div>
             </div>
             <div className="container mx-auto px-4 max-w-6xl relative h-full">
-              <div className="grid xl:grid-cols-2 gap-12 items-center h-full">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 h-full">
                 <div className="flex flex-col justify-center">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">
                     {t('bugBounty.hero.title')}
@@ -30,11 +31,11 @@ const BugBounty = () => {
                     {t('bugBounty.hero.subtitle')}
                   </p>
                 </div>
-                <div className="hidden xl:flex items-center justify-center">
+                <div className="hidden xl:flex items-end justify-center">
                   <img 
                     src="/lovable-uploads/3d5fb454-c201-4f91-abe8-d7e267afc356.png" 
                     alt="Bug Bounty Platform Logo"
-                    className="w-80 h-80 object-contain"
+                    className="max-w-full h-auto block"
                   />
                 </div>
               </div>

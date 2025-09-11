@@ -11,15 +11,16 @@ const CommunityFundPage = () => {
         <Navbar />
         <main className="pt-16">
           {/* Hero Section */}
-          <section className="h-[500px] md:h-[600px] bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden flex items-center">
-            <div className="absolute inset-0 opacity-20">
+          <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+            <div className="absolute inset-0 opacity-30">
               <div className="absolute inset-0" style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
+                backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
+                                 linear-gradient(150deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1))`,
                 backgroundSize: '24px 24px'
               }}></div>
             </div>
             <div className="container mx-auto px-4 max-w-6xl relative h-full">
-              <div className="grid xl:grid-cols-2 gap-12 items-center h-full">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 h-full">
                 <div className="flex flex-col justify-center">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">
                     {t('fund.hero.title')}
@@ -28,11 +29,11 @@ const CommunityFundPage = () => {
                     {t('fund.hero.subtitle')}
                   </p>
                 </div>
-                <div className="hidden xl:flex items-center justify-center">
+                <div className="hidden xl:flex items-end justify-center">
                   <img 
                     src="/lovable-uploads/f031df16-47bf-4398-ba2c-61bce177c222.png" 
                     alt="Community Fund supporting Denmark's cybersecurity"
-                    className="w-80 h-80 object-contain"
+                    className="max-w-full h-auto block"
                   />
                 </div>
               </div>

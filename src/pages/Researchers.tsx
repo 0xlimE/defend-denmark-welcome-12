@@ -98,7 +98,7 @@ const Researchers = () => {
                     {t('researchers.subtitle')}
                   </p>
                 </div>
-                <div className="flex items-end justify-center">
+                <div className="hidden xl:flex items-end justify-center">
                   <img 
                     src="/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png" 
                     alt="Ethical hacker researcher working on laptop"
