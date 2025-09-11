@@ -14,7 +14,7 @@ const About = () => {
         
         <main className="pt-16">
           {/* Hero Section */}
-          <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+          <section className="h-[500px] md:h-[600px] bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden flex items-center">
             <div className="absolute inset-0 opacity-20">
               <div className="absolute inset-0" style={{
                 backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
@@ -22,7 +22,7 @@ const About = () => {
               }}></div>
             </div>
             <div className="container mx-auto px-4 max-w-6xl relative h-full">
-              <div className="grid lg:grid-cols-2 gap-12 h-full">
+              <div className="grid xl:grid-cols-2 gap-12 items-center h-full">
                 <div className="flex flex-col justify-center">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">
                     {t('about.hero.title')}
@@ -31,11 +31,11 @@ const About = () => {
                     {t('about.hero.subtitle')}
                   </p>
                 </div>
-                <div className="flex items-end justify-center">
+                <div className="hidden xl:flex items-center justify-center">
                   <img 
                     src="/src/assets/about-hero.jpg" 
                     alt="About our team and mission"
-                    className="max-w-full h-auto block rounded-lg"
+                    className="w-80 h-80 object-cover rounded-lg"
                   />
                 </div>
               </div>

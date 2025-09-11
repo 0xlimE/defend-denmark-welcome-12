@@ -15,10 +15,9 @@ export const HeroSection = () => {
     console.log("Email signup:", email);
     setEmail("");
   };
-  return <section className="relative py-16 md:py-24 flex items-center px-4 bg-background overflow-hidden">
-
-      <div className="container mx-auto relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-0">
+  return <section className="relative h-[500px] md:h-[600px] flex items-center px-4 bg-background overflow-hidden">
+      <div className="container mx-auto relative z-10 max-w-6xl h-full">
+        <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 items-center h-full">
           {/* Left Content */}
           <div className="text-left space-y-6 lg:space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-blue">
@@ -45,9 +44,9 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Glitch Logo - Hidden on mobile */}
-          <div className="hidden md:flex justify-center items-center">
-            <div className="glitch-container w-64 h-64 md:w-80 md:h-80" style={{
+          {/* Right Content - Glitch Logo - Hidden on mobile/tablet */}
+          <div className="hidden xl:flex justify-center items-center">
+            <div className="glitch-container w-64 h-64 xl:w-80 xl:h-80" style={{
             '--logo-url': `url('/lovable-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png')`
           } as React.CSSProperties}>
               <div className="glitch-image" style={{
