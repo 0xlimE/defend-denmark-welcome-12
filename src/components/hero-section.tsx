@@ -16,11 +16,11 @@ export const HeroSection = () => {
     setEmail("");
   };
   return <section className="relative h-[500px] md:h-[600px] flex items-center px-4 bg-background overflow-hidden">
-      <div className="container mx-auto relative z-10 max-w-6xl h-full">
+      <div className="container mx-auto relative z-10 max-w-4xl h-full">
         <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 items-center h-full">
           {/* Left Content */}
-          <div className="text-left space-y-6 lg:space-y-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-blue">
+          <div className="text-center xl:text-left space-y-6 lg:space-y-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-blue">
               {t('hero.title')}
               <br />
               <span className="text-blue/90">
