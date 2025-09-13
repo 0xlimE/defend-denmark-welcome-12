@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-muted">
-      <div className="max-w-5xl mx-auto bg-background shadow-lg">
+      <div className="max-w-7xl mx-auto bg-background shadow-lg">
         <Navbar />
         <main>
           <HeroSection />
