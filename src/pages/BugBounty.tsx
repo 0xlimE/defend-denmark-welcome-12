@@ -9,7 +9,7 @@ const BugBounty = () => {
     t
   } = useLanguage();
   return <div className="min-h-screen bg-muted">
-      <div className="max-w-7xl mx-auto bg-background shadow-lg">
+      <div className="max-w-5xl mx-auto bg-background shadow-lg">
         <Navbar />
         <main className="pt-16">
           {/* Hero Section */}
@@ -20,7 +20,7 @@ const BugBounty = () => {
                 backgroundSize: '24px 24px'
               }}></div>
             </div>
-            <div className="container mx-auto px-4 max-w-6xl relative h-full">
+            <div className="container mx-auto px-4 max-w-4xl relative h-full">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 h-full">
                 <div className="flex flex-col justify-center">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">

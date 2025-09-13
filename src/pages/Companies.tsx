@@ -66,7 +66,7 @@ const Companies = () => {
 
   return (
     <div className="min-h-screen bg-muted">
-      <div className="max-w-7xl mx-auto bg-background shadow-lg">
+      <div className="max-w-5xl mx-auto bg-background shadow-lg">
         <Navbar />
         <main className="pt-16">
           {/* Hero Section */}
@@ -77,7 +77,7 @@ const Companies = () => {
                 backgroundSize: '24px 24px'
               }}></div>
             </div>
-            <div className="container mx-auto px-4 max-w-6xl relative h-full">
+            <div className="container mx-auto px-4 max-w-4xl relative h-full">
               <div className="grid lg:grid-cols-2 gap-12 h-full">
                 <div className="flex flex-col justify-center">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">
@@ -100,7 +100,7 @@ const Companies = () => {
 
           {/* How It Works Section */}
           <section className="py-16 md:py-24 bg-background">
-            <div className="container mx-auto px-4 max-w-6xl">
+            <div className="container mx-auto px-4 max-w-4xl">
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue">
                   {t('companies.howItWorks')}
@@ -131,7 +131,7 @@ const Companies = () => {
 
           {/* Benefits Section */}
           <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-background">
-            <div className="container mx-auto px-4 max-w-6xl">
+            <div className="container mx-auto px-4 max-w-4xl">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {benefits.map((benefit, index) => (
                   <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20">
