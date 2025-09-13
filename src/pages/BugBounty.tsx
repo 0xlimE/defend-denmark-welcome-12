@@ -14,10 +14,9 @@ const BugBounty = () => {
         <main className="pt-16">
           {/* Hero Section */}
           <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
-            <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0 opacity-20">
               <div className="absolute inset-0" style={{
-                backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
-                                 linear-gradient(150deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1))`,
+                backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
                 backgroundSize: '24px 24px'
               }}></div>
             </div>
@@ -35,7 +34,7 @@ const BugBounty = () => {
                   <img 
                     src="/lovable-uploads/3d5fb454-c201-4f91-abe8-d7e267afc356.png" 
                     alt="Bug Bounty Platform Logo"
-                    className="max-w-full h-auto block"
+                    className="h-64 w-auto block rounded-lg"
                   />
                 </div>
               </div>

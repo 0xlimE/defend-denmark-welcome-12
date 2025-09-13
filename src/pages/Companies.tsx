@@ -91,7 +91,7 @@ const Companies = () => {
                   <img 
                     src="/lovable-uploads/3ec51c56-a4c5-4f45-bc80-703b55d3c1ed.png" 
                     alt="City skyline with security shield representing company protection"
-                    className="max-w-full h-auto block"
+                    className="h-64 w-auto block rounded-lg"
                   />
                 </div>
               </div>

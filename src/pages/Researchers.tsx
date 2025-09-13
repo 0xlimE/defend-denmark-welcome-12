@@ -65,12 +65,11 @@ const Researchers = () => {
         <main className="pt-16">
           {/* Hero Section */}
           <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
-            <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0 opacity-20">
               <div className="absolute inset-0" style={{
-              backgroundImage: `linear-gradient(30deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1)),
-                                 linear-gradient(150deg, hsl(var(--primary) / 0.1) 12%, transparent 12.5%, transparent 87%, hsl(var(--primary) / 0.1) 87.5%, hsl(var(--primary) / 0.1))`,
-              backgroundSize: '24px 24px'
-            }}></div>
+                backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
+                backgroundSize: '24px 24px'
+              }}></div>
             </div>
             <div className="container mx-auto px-4 max-w-6xl relative h-full">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 h-full">
@@ -83,7 +82,10 @@ const Researchers = () => {
                   </p>
                 </div>
                 <div className="hidden xl:flex items-end justify-center">
-                  <img src="/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png" alt="Ethical hacker researcher working on laptop" className="max-w-full h-auto block" />
+                  <img src="/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png" 
+                  alt="Ethical hacker researcher working on laptop" 
+                  className="h-64 w-auto block rounded-lg"
+                  />
                 </div>
               </div>
             </div>
