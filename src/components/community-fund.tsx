@@ -6,7 +6,7 @@ export const CommunityFund = () => {
     t
   } = useLanguage();
   return <section className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4 text-sm font-medium">
             {t('fund.badge')}
@@ -36,17 +36,22 @@ export const CommunityFund = () => {
         </div>
 
         {/* Community Fund Flowchart Section */}
-        <div className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-blue mb-8 text-center">
+        <div className="mb-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-blue mb-6 text-center">
             {t('fund.howItWorks')}
           </h3>
           <div className="max-w-5xl mx-auto">
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 border border-primary/20">
-              <img src="/lovable-uploads/22685be1-1198-4d33-9da8-62251c31ee11.png" alt="Community Fund Flowchart showing the process from defenders reporting vulnerabilities to beneficiaries receiving payments" className="w-full h-auto rounded-lg shadow-lg" />
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-8 border border-primary/20 flex items-center justify-center">
+              <img
+          src="/lovable-uploads/flowchart_bordered.png"
+          alt="Community Fund Flowchart showing the process from defenders reporting vulnerabilities to beneficiaries receiving payments"
+          className="max-w-full w-full h-auto rounded-md shadow-lg"
+          style={{ objectFit: "contain" }}
+              />
             </div>
-            <div className="mt-6 text-center">
-              <p className="text-blue/70 text-sm max-w-2xl mx-auto">
-                {t('fund.flowchartDesc')}
+            <div className="mt-4 text-center">
+              <p className="text-blue/70 text-sm max-w-xl mx-auto">
+          {t('fund.flowchartDesc')}
               </p>
             </div>
           </div>
@@ -63,7 +68,7 @@ export const CommunityFund = () => {
               <p>{t('fund.activate.desc2')}</p>
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/1aa482d8-4a5b-4e56-8ab9-0e1260a492ec.png" alt="Historic Danish church with green copper dome showcasing Danish architectural heritage" className="w-full h-full object-cover" />
+              <img src="/lovable-uploads/kirke.png" alt="Historic Danish church with green copper dome showcasing Danish architectural heritage" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -84,7 +89,7 @@ export const CommunityFund = () => {
               <p>{t('fund.structure.desc4')}</p>
             </div>
             <div className="lg:order-first aspect-[4:5] rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/336cf98e-4dab-4dd9-a086-cc13804cc515.png" alt="Historic Danish castle with red brick architecture and green copper domes representing institutional strength" className="w-full h-full object-cover" />
+              <img src="/lovable-uploads/slot.jpeg" alt="Historic Danish castle with red brick architecture and green copper domes representing institutional strength" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

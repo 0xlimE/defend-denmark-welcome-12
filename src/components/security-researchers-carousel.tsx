@@ -170,7 +170,7 @@ export const SecurityResearchersCarousel = () => {
         </p>
       </div>
 
-      <Carousel className="w-full max-w-7xl mx-auto">
+      <Carousel className="w-full max-w-8xl mx-auto">
         <CarouselContent className="-ml-4">
           {mockResearchers.map((researcher) => (
             <CarouselItem key={researcher.id} className="pl-4 md:basis-1/1 lg:basis-1/1">

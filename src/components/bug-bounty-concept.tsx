@@ -30,7 +30,7 @@ export const BugBountyConcept = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-background relative overflow-hidden">
+    <section className="py-8 md:py-12 bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -39,7 +39,7 @@ export const BugBountyConcept = () => {
           backgroundSize: '20px 20px'
         }}></div>
       </div>
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-blue border-blue/30 bg-blue/10">
             {t('concept.badge')}

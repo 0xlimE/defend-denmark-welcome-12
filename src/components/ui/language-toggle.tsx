@@ -18,7 +18,7 @@ export const LanguageToggle = ({ className }: LanguageToggleProps) => {
         className={`text-sm font-medium min-w-[40px] transition-all ${
           language === 'da' 
             ? 'bg-primary text-primary-foreground shadow-sm' 
-            : 'text-gray-700 hover:bg-gray-100 hover:text-primary'
+            : 'text-gray-700 hover:bg-red-100 hover:text-red-600'
         }`}
       >
         DA
@@ -31,7 +31,7 @@ export const LanguageToggle = ({ className }: LanguageToggleProps) => {
         className={`text-sm font-medium min-w-[40px] transition-all ${
           language === 'en' 
             ? 'bg-primary text-primary-foreground shadow-sm' 
-            : 'text-gray-700 hover:bg-gray-100 hover:text-primary'
+            : 'text-gray-700 hover:bg-red-100 hover:text-red-600'
         }`}
       >
         EN

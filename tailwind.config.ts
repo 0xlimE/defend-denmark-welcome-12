@@ -16,8 +16,8 @@ export default {
 				DEFAULT: '1rem',
 				sm: '2rem',
 				lg: '3rem',
-				xl: '4rem',
-				'2xl': '5rem',
+				xl: '3rem',  // Keep same as lg to prevent jumping
+				'2xl': '4rem', // Only increase at 2xl
 			},
 			screens: {
 				sm: '640px',

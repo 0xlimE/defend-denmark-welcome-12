@@ -49,7 +49,7 @@ export const BugBountySteps = () => {
   ];
   return (
     <section className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4 text-sm font-medium">
             {t('steps.badge')}

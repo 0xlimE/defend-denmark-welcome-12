@@ -1,14 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/language-context";
 import { Linkedin } from "lucide-react";
+
 export const Footer = () => {
   const [email, setEmail] = useState("");
-  const {
-    t
-  } = useLanguage();
+  const [contactEmail, setContactEmail] = useState("");
+  const { t } = useLanguage();
+
+  useEffect(() => {
+    // Build email dynamically to avoid scrapers
+    const domain = 'defenddenmark.dk';
+    const user = 'info';
+    const fullEmail = user + '@' + domain;
+    setContactEmail(fullEmail);
+  }, []);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Newsletter signup:", email);
@@ -28,8 +37,7 @@ export const Footer = () => {
               className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold px-8 py-3"
             >
               <a 
-                href="https://forms.google.com/early-access" 
-                target="_blank" 
+                href="https://forms.cloud.microsoft/e/PafMKprbP9" 
                 rel="noopener noreferrer"
               >
                 {t('footer.prelaunch.button')}
@@ -81,8 +89,16 @@ export const Footer = () => {
               <div>{t('footer.address1')}</div>
               <div>{t('footer.address2')}</div>
               <div className="mt-5">
-                <a href={`mailto:${t('footer.email')}`} className="hover:text-primary transition-colors">
-                  {t('footer.email')}
+                <a 
+                  href={contactEmail ? `mailto:${contactEmail}` : '#'} 
+                  className="hover:text-primary transition-colors"
+                  onClick={(e) => {
+                    if (!contactEmail) {
+                      e.preventDefault();
+                    }
+                  }}
+                >
+                  {contactEmail || 'Loading...'}
                 </a>
               </div>
             </div>

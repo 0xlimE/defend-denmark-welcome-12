@@ -73,7 +73,7 @@ export const PreventiveMeasuresCarousel = () => {
         }} />
       </div>
       
-      <div className="container mx-auto px-4 relative z-10 max-w-6xl">
+      <div className="container mx-auto px-4 relative z-10 max-w-7xl">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4 text-sm font-medium">
             {t('steps.badge')}

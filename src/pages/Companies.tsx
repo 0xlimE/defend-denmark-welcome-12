@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { PageHero } from "@/components/page-hero";
 import { useLanguage } from "@/contexts/language-context";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -66,41 +67,22 @@ const Companies = () => {
 
   return (
     <div className="min-h-screen bg-muted">
-      <div className="max-w-5xl mx-auto bg-background shadow-lg">
+      <div className="max-w-6xl mx-auto bg-background shadow-lg">
         <Navbar />
         <main className="pt-16">
-          {/* Hero Section */}
-          <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
-                backgroundSize: '24px 24px'
-              }}></div>
-            </div>
-            <div className="container mx-auto px-4 max-w-4xl relative h-full">
-              <div className="grid lg:grid-cols-2 gap-12 h-full">
-                <div className="flex flex-col justify-center">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue">
-                    {t('companies.title')}
-                  </h1>
-                  <p className="text-xl md:text-2xl text-blue/80 mb-8 leading-relaxed">
-                    {t('companies.subtitle')}
-                  </p>
-                </div>
-                <div className="flex items-end justify-center">
-                  <img 
-                    src="/lovable-uploads/3ec51c56-a4c5-4f45-bc80-703b55d3c1ed.png" 
-                    alt="City skyline with security shield representing company protection"
-                    className="h-64 w-auto block rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+          <PageHero
+            title={t('companies.title')}
+            subtitle={t('companies.subtitle')}
+            image={{
+              src: "/lovable-uploads/3ec51c56-a4c5-4f45-bc80-703b55d3c1ed.png",
+              alt: "City skyline with security shield representing company protection",
+              maxHeight: "max-h-58"
+            }}
+          />
 
           {/* How It Works Section */}
           <section className="py-16 md:py-24 bg-background">
-            <div className="container mx-auto px-4 max-w-4xl">
+            <div className="container mx-auto px-4 max-w-5xl">
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue">
                   {t('companies.howItWorks')}
@@ -131,7 +113,7 @@ const Companies = () => {
 
           {/* Benefits Section */}
           <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-background">
-            <div className="container mx-auto px-4 max-w-4xl">
+            <div className="container mx-auto px-4 max-w-5xl">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {benefits.map((benefit, index) => (
                   <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-primary/20">
