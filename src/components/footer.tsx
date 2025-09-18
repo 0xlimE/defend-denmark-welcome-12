@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/language-context";
 import { Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
@@ -62,9 +63,9 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-blue">{t('footer.platform')}</h4>
             <ul className="space-y-2 text-sm text-blue/70">
-              <li><a href="/researchers" className="hover:text-primary transition-colors">{t('footer.forResearchers')}</a></li>
-              <li><a href="/companies" className="hover:text-primary transition-colors">{t('footer.forCompanies')}</a></li>
-              <li><a href="/bug-bounty" className="hover:text-primary transition-colors">Bug Bounty</a></li>
+              <li><Link to="/researchers" className="hover:text-primary transition-colors">{t('footer.forResearchers')}</Link></li>
+              <li><Link to="/companies" className="hover:text-primary transition-colors">{t('footer.forCompanies')}</Link></li>
+              <li><Link to="/bug-bounty" className="hover:text-primary transition-colors">Bug Bounty</Link></li>
             </ul>
           </div>
 
@@ -72,8 +73,8 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-blue">{t('footer.community')}</h4>
             <ul className="space-y-2 text-sm text-blue/70">
-              <li><a href="/about" className="hover:text-primary transition-colors">{t('footer.about')}</a></li>
-              <li><a href="/community-fund" className="hover:text-primary transition-colors">{t('footer.communityFund')}</a></li>
+              <li><Link to="/about" className="hover:text-primary transition-colors">{t('footer.about')}</Link></li>
+              <li><Link to="/community-fund" className="hover:text-primary transition-colors">{t('footer.communityFund')}</Link></li>
             </ul>
           </div>
 
