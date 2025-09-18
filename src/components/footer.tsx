@@ -50,7 +50,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png" alt="defend Denmark Logo" className="w-10 h-10 object-contain" />
+              <img src="/site-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png" alt="defend Denmark Logo" className="w-10 h-10 object-contain" />
               <span className="text-xl font-bold text-red-500">defend Denmark</span>
             </div>
             <p className="text-blue/70 text-sm">

@@ -29,7 +29,7 @@ export const CommunityFund = () => {
             </div>
             <div className="lg:order-first">
               <div className="aspect-video rounded-lg overflow-hidden">
-                <img src="/lovable-uploads/f031df16-47bf-4398-ba2c-61bce177c222.png" alt="Danish flag waving against blue sky representing Denmark's commitment to cybersecurity" className="w-full h-full object-cover" />
+                <img src="/site-uploads/f031df16-47bf-4398-ba2c-61bce177c222.png" alt="Danish flag waving against blue sky representing Denmark's commitment to cybersecurity" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const CommunityFund = () => {
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-8 border border-primary/20 flex items-center justify-center">
               <img
-          src="/lovable-uploads/flowchart_bordered.png"
+          src="/site-uploads/flowchart_bordered.png"
           alt="Community Fund Flowchart showing the process from defenders reporting vulnerabilities to beneficiaries receiving payments"
           className="max-w-full w-full h-auto rounded-md shadow-lg"
           style={{ objectFit: "contain" }}
@@ -68,7 +68,7 @@ export const CommunityFund = () => {
               <p>{t('fund.activate.desc2')}</p>
             </div>
             <div className="aspect-square rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/kirke.png" alt="Historic Danish church with green copper dome showcasing Danish architectural heritage" className="w-full h-full object-cover" />
+              <img src="/site-uploads/kirke.png" alt="Historic Danish church with green copper dome showcasing Danish architectural heritage" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ export const CommunityFund = () => {
               <p>{t('fund.structure.desc4')}</p>
             </div>
             <div className="lg:order-first aspect-[4:5] rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/slot.jpeg" alt="Historic Danish castle with red brick architecture and green copper domes representing institutional strength" className="w-full h-full object-cover" />
+              <img src="/site-uploads/slot.jpeg" alt="Historic Danish castle with red brick architecture and green copper domes representing institutional strength" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

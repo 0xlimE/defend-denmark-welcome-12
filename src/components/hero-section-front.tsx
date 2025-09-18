@@ -49,10 +49,10 @@ export const HeroSection = () => {
           {/* Right Content - Glitch Logo - Responsive to container */}
           <div className="hidden min-[850px]:flex justify-center items-center">
             <div className="glitch-container w-full max-w-xs aspect-square" style={{
-            '--logo-url': `url('/lovable-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png')`
+            '--logo-url': `url('/site-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png')`
           } as React.CSSProperties}>
               <div className="glitch-image w-full h-full" style={{
-              backgroundImage: `url('/lovable-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png')`
+              backgroundImage: `url('/site-uploads/4343b510-aec9-41a6-a97c-1f57d2dab0e1.png')`
             }}></div>
             </div>
           </div>

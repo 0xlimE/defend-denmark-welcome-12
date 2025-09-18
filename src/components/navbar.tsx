@@ -18,7 +18,7 @@ export const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity" onClick={closeMenu}>
           <img 
-            src="/lovable-uploads/2e69e9b4-8634-47be-92ca-4cc22f1b595e.png" 
+            src="/site-uploads/2e69e9b4-8634-47be-92ca-4cc22f1b595e.png" 
             alt="defend Denmark logo" 
             className="w-8 h-8"
           />

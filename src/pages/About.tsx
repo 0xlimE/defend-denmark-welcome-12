@@ -18,7 +18,7 @@ const About = () => {
             title={t('about.hero.title')}
             subtitle={t('about.hero.subtitle')}
             image={{
-              src: "/lovable-uploads/aboutreal.png",
+              src: "/site-uploads/aboutreal.png",
               alt: "About Defend Denmark - Enhancing National Cybersecurity",
               maxHeight: "max-h-64"
             }}
@@ -31,7 +31,7 @@ const About = () => {
               {/* Emil Hørning Picture */}
               <div className="flex flex-col items-center ml-20">
                 <div className="w-64 h-80 rounded-lg overflow-hidden shadow-lg border-2 border-primary/20">
-                  <img src="/lovable-uploads/b5eca1c5-8c12-4758-a46e-df6fe282d5b3.png" alt="Emil Hørning" className="w-full h-full object-cover" />
+                  <img src="/site-uploads/b5eca1c5-8c12-4758-a46e-df6fe282d5b3.png" alt="Emil Hørning" className="w-full h-full object-cover" />
                 </div>
                 <div className="text-center mt-4">
                   <h3 className="text-xl font-semibold text-primary">Emil Hørning</h3>

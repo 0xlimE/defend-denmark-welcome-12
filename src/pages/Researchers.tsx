@@ -68,7 +68,7 @@ const Researchers = () => {
             title={t('researchers.title')}
             subtitle={t('researchers.subtitle')}
             image={{
-              src: "/lovable-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png",
+              src: "/site-uploads/dd6e047f-495e-4ecf-aca6-94f403d2730b.png",
               alt: "Ethical hacker researcher working on laptop",
               maxHeight: "max-h-60"
             }}

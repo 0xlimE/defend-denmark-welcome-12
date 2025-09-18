@@ -30,7 +30,7 @@ const mockResearchers: Researcher[] = [
   {
     id: "1",
     name: "HestenettetDK",
-    avatar: "/lovable-uploads/924a1977-80c8-4f10-8f0c-e328ed4bc715.png",
+    avatar: "/site-uploads/924a1977-80c8-4f10-8f0c-e328ed4bc715.png",
     profession: "Penetration tester in Critical Infrastructure",
     specialization: "Mobile Apps & Kubernetes Security",
     yearsExperience: 5,
@@ -67,7 +67,7 @@ const mockResearchers: Researcher[] = [
   {
     id: "2",
     name: "Cave",
-    avatar: "/lovable-uploads/81b4b07f-c99c-4cd7-aaff-59e45853092c.png",
+    avatar: "/site-uploads/81b4b07f-c99c-4cd7-aaff-59e45853092c.png",
     profession: "Student Cybersecurity Researcher",
     specialization: "Hardware Devices & Smartphones",
     yearsExperience: 4,
@@ -104,7 +104,7 @@ const mockResearchers: Researcher[] = [
   {
     id: "3",
     name: "0xlimE",
-    avatar: "/lovable-uploads/7e7ce66b-abbd-40c3-9be2-aaa7bff36755.png",
+    avatar: "/site-uploads/7e7ce66b-abbd-40c3-9be2-aaa7bff36755.png",
     profession: "Bug Bounty Hunter Manager",
     specialization: "Access Control Issues",
     yearsExperience: 7,

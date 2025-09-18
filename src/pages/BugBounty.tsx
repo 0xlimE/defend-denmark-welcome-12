@@ -17,7 +17,7 @@ const BugBounty = () => {
             title={t('bugBounty.hero.title')}
             subtitle={t('bugBounty.hero.subtitle')}
             image={{
-              src: "/lovable-uploads/handshake.png",
+              src: "/site-uploads/handshake.png",
               alt: "Bug Bounty Platform Logo",
               maxHeight: "max-h-56"
             }}

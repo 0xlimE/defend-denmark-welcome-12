@@ -74,7 +74,7 @@ const Companies = () => {
             title={t('companies.title')}
             subtitle={t('companies.subtitle')}
             image={{
-              src: "/lovable-uploads/3ec51c56-a4c5-4f45-bc80-703b55d3c1ed.png",
+              src: "/site-uploads/3ec51c56-a4c5-4f45-bc80-703b55d3c1ed.png",
               alt: "City skyline with security shield representing company protection",
               maxHeight: "max-h-58"
             }}

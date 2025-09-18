@@ -15,7 +15,7 @@ const CommunityFundPage = () => {
             title={t('fund.hero.title')}
             subtitle={t('fund.hero.subtitle')}
             image={{
-              src: "/lovable-uploads/piggybank.png",
+              src: "/site-uploads/piggybank.png",
               alt: "Community Fund supporting Denmark's cybersecurity",
               maxHeight: "max-h-64"
             }}
