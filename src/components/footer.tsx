@@ -64,9 +64,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-blue/70">
               <li><a href="/researchers" className="hover:text-primary transition-colors">{t('footer.forResearchers')}</a></li>
               <li><a href="/companies" className="hover:text-primary transition-colors">{t('footer.forCompanies')}</a></li>
-              
-              
-              
+              <li><a href="/bug-bounty" className="hover:text-primary transition-colors">Bug Bounty</a></li>
             </ul>
           </div>
 
@@ -76,19 +74,18 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-blue/70">
               <li><a href="/about" className="hover:text-primary transition-colors">{t('footer.about')}</a></li>
               <li><a href="/community-fund" className="hover:text-primary transition-colors">{t('footer.communityFund')}</a></li>
-              
-              
             </ul>
           </div>
 
           {/* Company */}
           <div>
             <h4 className="font-semibold mb-4 text-blue">{t('footer.company')}</h4>
-            <div className="space-y-1 text-sm text-blue/70">
+            <div className="space-y-2 text-sm text-blue/70">
               <div className="font-medium">{t('footer.companyName')}</div>
               <div>{t('footer.address1')}</div>
               <div>{t('footer.address2')}</div>
-              <div className="mt-5">
+              <div>CVR: 45824578</div>
+              <div className="pt-3">
                 <a 
                   href={contactEmail ? `mailto:${contactEmail}` : '#'} 
                   className="hover:text-primary transition-colors"
