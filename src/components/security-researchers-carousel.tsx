@@ -103,36 +103,73 @@ const mockResearchers: Researcher[] = [
   },
   {
     id: "3",
-    name: "0xlimE",
-    avatar: "/site-uploads/7e7ce66b-abbd-40c3-9be2-aaa7bff36755.png",
-    profession: "Bug Bounty Hunter Manager",
-    specialization: "Access Control Issues",
-    yearsExperience: 7,
+    name: "ggisz",
+    avatar: "/site-uploads/ggisz.png",
+    profession: "Security Consultant",
+    specialization: "Web applications",
+    yearsExperience: 10,
     verified: true,
     signedAgreement: true,
     signedNDA: true,
     vulnerabilities: [
       {
-        title: "Delete any marketplace listing",
-        reward: "~10,000 DKK",
-        industry: "Marketplaces",
-        cvss: "7.5",
+        title: "Remote code execution leading to takeover of company instances in security scanning software",
+        reward: "90,000 DKK",
+        industry: "European Security Vendor",
+        cvss: "10.0",
+        severity: "Critical",
+        acceptedAs: "Critical"
+      },
+      {
+        title: "Privilege escalation through setting other users roles",
+        reward: "74,000 DKK",
+        industry: "European Security Vendor",
+        cvss: "8.1",
         severity: "High",
         acceptedAs: "High"
       },
       {
-        title: "IDOR leads to mass leak of customer claims documents",
-        reward: "25,000 DKK",
-        industry: "Insurance industry",
-        cvss: "7.5",
-        severity: "High",
+        title: "Heap overflow leading to unauthenticated remote code execution",
+        reward: "37,000 DKK",
+        industry: "F-Secure",
+        cvss: "9.8",
+        severity: "Critical",
+        acceptedAs: "Critical"
+      }
+    ]
+  },
+  {
+    id: "4",
+    name: "Thirup",
+    avatar: "/site-uploads/thirup.png",
+    profession: "Security Consultant",
+    specialization: "Web security",
+    yearsExperience: 10,
+    verified: true,
+    signedAgreement: true,
+    signedNDA: true,
+    vulnerabilities: [
+      {
+        title: "Misconfigured password reset vulnerability leads to account takeover in LMS system",
+        reward: "N/A",
+        industry: "Military system",
+        cvss: "9.1",
+        severity: "Critical",
         acceptedAs: "Critical"
       },
       {
-        title: "Weak authentication leads to mass account take over",
-        reward: "~21,000 DKK",
-        industry: "Financial Industry",
-        cvss: "9.4",
+        title: "Error based SQL Injection in Oracle DBMS",
+        reward: "15,000 DKK",
+        industry: "Telecom sector",
+        cvss: "8.1",
+        severity: "High",
+        acceptedAs: "High"
+      },
+      {
+        title: "SSRF leads to internal network pivoting and compromise of AWS credentials through proxy functionality",
+        reward: "N/A",
+        industry: "Government system",
+        cvss: "9.8",
         severity: "Critical",
         acceptedAs: "Critical"
       }
