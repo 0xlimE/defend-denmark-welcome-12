@@ -104,10 +104,19 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-blue/70 text-sm">
-            {t('footer.copyright')}
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <p className="text-blue/70 text-sm">
+              {t('footer.copyright')}
+            </p>
+
+          </div>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
+                        <Link to="/privacy-policy" className="text-blue/70 hover:text-primary transition-colors text-sm">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-service" className="text-blue/70 hover:text-primary transition-colors text-sm">
+              Terms of Service
+            </Link>
             <a href="https://www.linkedin.com/company/defend-denmark" target="_blank" rel="noopener noreferrer" className="text-blue/70 hover:text-primary transition-colors" aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
