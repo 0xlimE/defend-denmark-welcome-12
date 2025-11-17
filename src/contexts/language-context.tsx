@@ -203,6 +203,9 @@ const translations = {
     'about.vulnerability.industry': 'Industry',
     'about.vulnerability.reward': 'Reward',
     'about.founder.quote': 'After identifying hundreds of vulnerabilities myself and working with the best Danish ethical hackers, I realized that there weren\'t many Danish companies on bug bounty platforms. This led me to launch Defend Denmark to help Danish companies work with the Danish security community to find real and impactful vulnerabilities in Danish companies',
+    'about.discord.title': 'Join Our Community',
+    'about.discord.description': 'Connect with fellow security researchers, stay updated on the latest programs, and participate in discussions about Danish cybersecurity.',
+    'about.discord.button': 'Join us on Discord',
 
     // Researchers Page
     'nav.researchers': 'For Researchers',
@@ -467,6 +470,9 @@ const translations = {
     'about.vulnerability.industry': 'Branche',
     'about.vulnerability.reward': 'Belønning',
     'about.founder.quote': 'Efter selv at have identificeret hundredevis af sårbarheder og arbejdet med de dygtigste danske etiske hackere, gik det op for mig at der ikke var særligt mange danske virksomheder på bug bounty platforme. Dette fik mig til at sætte Defend Denmark i verden, for at hjælpe danske virksomheder med at arbejde med den danske sikkerheds-community om at finde reelle og vigtige sårbarheder i danske virksomheder.',
+    'about.discord.title': 'Bliv en del af fællesskabet',
+    'about.discord.description': 'Kom i kontakt med andre etiske hackere, bliv opdateret om de nyeste programmer og deltag i diskussioner om dansk cybersikkerhed.',
+    'about.discord.button': 'Join os på Discord',
     
     // Researchers Page
     'nav.researchers': 'For Etiske Hackere',
