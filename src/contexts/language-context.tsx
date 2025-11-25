@@ -230,7 +230,7 @@ const translations = {
     // Hero Section
     'hero.title': 'Et sikrere digitalt',
     'hero.titleAccent': 'Danmark',
-    'hero.subtitle': 'Styrk jeres digitale sikkerhed via Defend Denmarks bug bounty platform. Vi samarbejder med landets dygtigste etiske hackere, som simulerer ondsindede aktørers metoder. De finder sårbarheder i jeres systemer, i betaler kun for reelle og alvorlige sårbarheder.',
+    'hero.subtitle': 'Styrk jeres digitale sikkerhed via Defend Denmarks bug bounty platform. Vi samarbejder med landets dygtigste etiske hackere, som simulerer ondsindede aktørers metoder. De finder sårbarheder i jeres systemer og i betaler kun for reelle og alvorlige sårbarheder.',
     'hero.bookDemo': 'Book en Demo',
     'hero.learnMore': 'Lær Mere',
     
