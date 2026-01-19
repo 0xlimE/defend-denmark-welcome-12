@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
                   <li>Email: <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
                 </ul>
                 <p>
-                  Unless otherwise stated, Defend Denmark acts as the data controller for the personal data described in this policy. We do not process customer end-user data by default. If "incidental processing" occurs (e.g. accidental upload of PII in a report), we act as a Processor solely for that instance and Section 13 applies.
+                  Unless otherwise stated, Defend Denmark acts as the data controller for the personal data described in this policy. We do not process customer end-user data by default. If "incidental processing" occurs (e.g. accidental upload of PII in a report), we act as a Processor solely for that instance and Section 12 applies.
                 </p>
               </section>
 
@@ -100,7 +100,7 @@ const PrivacyPolicy = () => {
                       </tr>
                       <tr>
                         <td className="border border-gray-300 px-4 py-2">Transactional and financial data</td>
-                        <td className="border border-gray-300 px-4 py-2">Bank/IBAN details (security researchers), invoice data (customers), payment status, payment token identifiers from external providers (we do not store card details)</td>
+                        <td className="border border-gray-300 px-4 py-2">Bank/IBAN details (security researchers), invoice data (customers), payment status.</td>
                         <td className="border border-gray-300 px-4 py-2">Provided by you</td>
                       </tr>
                       <tr>
@@ -151,9 +151,6 @@ const PrivacyPolicy = () => {
                   <li>Notify you about program updates, critical vulnerabilities or policy changes</li>
                   <li>Manage unpaid invoices and legal disputes related to the use of our services</li>
                 </ul>
-                <p className="mb-4 text-sm italic">
-                  Note: We use external payment service providers to process transactions. This means we do not store your credit card or bank information; all payment data is encrypted and handled securely by our providers.
-                </p>
                 <p className="mb-4">
                   <strong>Legal basis:</strong> Article 6(1)(b) GDPR (contract), Article 6(1)(f) GDPR (legitimate interest), and Article 6(1)(c) GDPR (legal obligation)
                 </p>
@@ -248,40 +245,6 @@ const PrivacyPolicy = () => {
                 <p className="mb-4">
                   <strong>We never sell personal data and we never disclose personal data to recipients outside the European Economic Area (EEA).</strong>
                 </p>
-                <p className="mb-4">We share personal data only when necessary and only with recipients located within the EEA:</p>
-                
-                <h3 className="text-xl font-semibold mb-3">Service Providers (Data Processors)</h3>
-                <p className="mb-3">We engage authorized service providers, acting as data processors on our behalf, to support the delivery, operation, security, and improvement of our services. All service providers are located within the EEA. These providers may access personal data only to the extent strictly necessary for the performance of their tasks. These include:</p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li><strong>Hosting and infrastructure:</strong> Microsoft Azure (EU regions) – hosting and cloud services</li>
-                  <li><strong>Payment processing:</strong> Stripe Payments EU – payouts & invoicing</li>
-                  <li><strong>Communications:</strong> Mailgun EU – transactional e-mail; push notification services</li>
-                  <li><strong>Customer relationship management:</strong> CRM platforms and ticketing systems</li>
-                  <li><strong>Development and maintenance:</strong> Software development providers for platform programming and support</li>
-                  <li><strong>Security services:</strong> IT security service providers; remote identity verification services (MitID, criminal record verification)</li>
-                  <li><strong>Electronic signature solutions</strong> (for contracts and agreements)</li>
-                </ul>
-                
-                <h3 className="text-xl font-semibold mb-3">Other Recipients</h3>
-                <p className="mb-3">Strictly within the scope of their respective duties, we may also grant access to your personal data to:</p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li><strong>Customers</strong> – limited to the data required to validate and remediate the vulnerability you report</li>
-                  <li><strong>Internal teams</strong> – responsible for the administration and management of the platform</li>
-                  <li><strong>Audit and control authorities</strong> – including statutory auditors</li>
-                  <li><strong>Public authorities</strong> – (e.g., tax or social security bodies, Datatilsynet) upon request, to comply with legal obligations</li>
-                  <li><strong>Judicial authorities</strong> – legal professionals, or debt recovery agencies in the context of legal proceedings or enforcement measures</li>
-                  <li><strong>Cybersecurity organizations</strong> – We may share anonymized vulnerability reports (without any personal data) with DKCERT (Danish Computer Emergency Response Team) and SektorCERT in Denmark to contribute to national cybersecurity efforts and threat intelligence</li>
-                </ul>
-                
-                <p className="mb-4">All processors are bound by written data-processing agreements and appropriate security measures, subject to strict confidentiality obligations. The Service Providers listed above are approved Sub-processors for the purposes of Section 13.</p>
-              </section>
-
-              {/* Section 9 */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-primary mb-4">9. International Transfers</h2>
-                <p className="mb-4">
-                  <strong>We do not transfer personal data outside the European Economic Area (EEA).</strong>
-                </p>
                 <p className="mb-4">
                   Your data is stored and retained, for the duration of its retention period, exclusively on servers located within the European Union. We use Microsoft Azure and Amazon Web Services with data centers in EU regions only.
                 </p>
@@ -330,9 +293,9 @@ const PrivacyPolicy = () => {
                   <li>Secure payment systems that comply with current industry standards and legal requirements</li>
                 </ul>
                 <p>
-                  These measures are designed to protect your data against accidental or unlawful destruction, loss, alteration, publication, unauthorised disclosure or access, misuse, or any other form of unlawful processing, ensuring the ongoing security, integrity, and confidentiality of your personal data.
-                </p>
-              </section>
+                  These me9 */}
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">9
 
               {/* Section 12 */}
               <section className="mb-8">
@@ -354,9 +317,9 @@ const PrivacyPolicy = () => {
                     <p className="mb-2"><strong>13.1.3</strong> The terms "controller", "personal data", "data subject", "processing", "processor" and "personal data breach" shall have the meaning ascribed to them in the Data Protection Act.</p>
                     <p className="mb-2"><strong>13.1.4</strong> Defend Denmark's services do not entail any processing (access, transfer, or storage) by Defend Denmark of personal data in customer's possession. In the context of such services, these Terms apply to the extent any incidental processing of such data takes place while performing the Services and/or if any processing has been specifically agreed between the parties.</p>
                     <p><strong>13.1.5</strong> Any references to these Terms in a service agreement entered into between the parties, or in an offer made by Defend Denmark which is accepted by the Controller, as applicable, shall include acceptance of the Terms.</p>
-                  </div>
-
-                  <div>
+                  </div>0 */}
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">10
                     <h3 className="text-xl font-semibold mb-2">13.2. Parties' Obligations</h3>
                     <p className="mb-2"><strong>13.2.1</strong> The Controller is fully responsible for fulfilling its legal obligation under the Data Protection Act, including providing adequate information to data subjects and making sure that all processing is lawful. The Controller shall also ensure that it is authorized to entrust the Processor with the processing of personal data and the Controller is solely responsible for the processing instructions provided to the Processor.</p>
                     <p className="mb-2"><strong>13.2.2</strong> The Processor shall only process personal data to the extent necessary to provide the Controller the specified Services and in accordance with the Controller's written instructions. The Processor shall not process the personal data for any other purpose or in a way that does not comply with these Terms or the Data Protection Act. The Processor must promptly notify the Controller if, in its opinion, the Controller's instructions do not comply with the Data Protection Act and in such events the Processor is not obliged to follow the Controller's instructions.</p>
@@ -368,116 +331,116 @@ const PrivacyPolicy = () => {
                       <li>have undertaken training on the Data Protection Act relating to the processing of personal data;</li>
                       <li>are aware of the Processor's obligations under the Data Protection Act and these Terms.</li>
                     </ul>
-                  </div>
-
-                  <div>
+                  </div>1 */}
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">11
                     <h3 className="text-xl font-semibold mb-2">13.3. Security of Personal Data</h3>
                     <p className="mb-2"><strong>13.3.1</strong> The Processor shall implement appropriate technical and organizational measures, appropriate to the risk, to ensure level of security and to minimize the risk of unlawful or unauthorized processing of personal data. The measures shall seek to, as appropriate:</p>
                     <ul className="list-disc pl-6 mb-2">
                        <li>ensure ongoing confidentiality, contiguity, and availability of personal data,</li>
                        <li>ensure a process for testing and evaluating the effectiveness of measures safeguarding the processing, and</li>
+                       <li>2 */}
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">12. Data-Processing Terms (Incidental Processing)</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">12.1. Subject Matter</h3>
+                    <p className="mb-2"><strong>12.1.1</strong> These terms on the Processing of Personal Data ("Terms") apply to all processing of personal data by Defend Denmark ApS, company number CVR 45824578, Reventlowsgade 18, 3th, 1651 KBH V ("Processor" or "Defend Denmark") where Defend Denmark acts as a data processor when providing customer ("Controller") service.</p>
+                    <p className="mb-2"><strong>12.1.2</strong> All reference to the "Data Protection Act" shall in these Terms mean the Danish Data Protection Act (Databeskyttelsesloven) and Regulation (EU) 2016/679 of the European Parliament and the Council of 27 April 2016 ("GDPR").</p>
+                    <p className="mb-2"><strong>12.1.3</strong> The terms "controller", "personal data", "data subject", "processing", "processor" and "personal data breach" shall have the meaning ascribed to them in the Data Protection Act.</p>
+                    <p className="mb-2"><strong>12.1.4</strong> Defend Denmark's services do not entail any processing (access, transfer, or storage) by Defend Denmark of personal data in customer's possession. In the context of such services, these Terms apply to the extent any incidental processing of such data takes place while performing the Services and/or if any processing has been specifically agreed between the parties.</p>
+                    <p><strong>12.1.5</strong> Any references to these Terms in a service agreement entered into between the parties, or in an offer made by Defend Denmark which is accepted by the Controller, as applicable, shall include acceptance of the Terms.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">12.2. Parties' Obligations</h3>
+                    <p className="mb-2"><strong>12.2.1</strong> The Controller is fully responsible for fulfilling its legal obligation under the Data Protection Act, including providing adequate information to data subjects and making sure that all processing is lawful. The Controller shall also ensure that it is authorized to entrust the Processor with the processing of personal data and the Controller is solely responsible for the processing instructions provided to the Processor.</p>
+                    <p className="mb-2"><strong>12.2.2</strong> The Processor shall only process personal data to the extent necessary to provide the Controller the specified Services and in accordance with the Controller's written instructions. The Processor shall not process the personal data for any other purpose or in a way that does not comply with these Terms or the Data Protection Act. The Processor must promptly notify the Controller if, in its opinion, the Controller's instructions do not comply with the Data Protection Act and in such events the Processor is not obliged to follow the Controller's instructions.</p>
+                    <p className="mb-2"><strong>12.2.3</strong> The Processor shall maintain the confidentiality of all personal data and it shall not disclose personal data to third parties unless in accordance with these Terms, where such authorization is provided for in an agreement between the parties, the Controller provides special permission for dissemination of information, or the Processor is legally obliged to do so.</p>
+                    <p className="mb-2"><strong>12.2.4</strong> The Processor will ensure that its employees:</p>
+                    <ul className="list-disc pl-6 mb-2">
+                      <li>are informed of the confidential nature of the personal data processed and that they are contractually bound by an obligation of confidentiality,</li>
+                      <li>are aware of their confidentiality obligations imposed by legislation,</li>
+                      <li>have undertaken training on the Data Protection Act relating to the processing of personal data;</li>
+                      <li>are aware of the Processor's obligations under the Data Protection Act and these Terms.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">12.3. Security of Personal Data</h3>
+                    <p className="mb-2"><strong>12.3.1</strong> The Processor shall implement appropriate technical and organizational measures, appropriate to the risk, to ensure level of security and to minimize the risk of unlawful or unauthorized processing of personal data. The measures shall seek to, as appropriate:</p>
+                    <ul className="list-disc pl-6 mb-2">
+                       <li>ensure ongoing confidentiality, contiguity, and availability of personal data,</li>
+                       <li>ensure a process for testing and evaluating the effectiveness of measures safeguarding the processing, and</li>
                        <li>ensure that adequate security measures are taken, having regards to the nature of the personal data processed, e.g. in terms of access control, the use of pseudo-identity and encryption.</li>
                     </ul>
-                    <p><strong>13.3.2</strong> In the event a Controller deems it necessary to implement extra security measures, in addition to the measures the Processor has implemented in relation to specific services, the parties shall enter into specific agreement in relation to such additional service.</p>
+                    <p><strong>12.3.2</strong> In the event a Controller deems it necessary to implement extra security measures, in addition to the measures the Processor has implemented in relation to specific services, the parties shall enter into specific agreement in relation to such additional service.</p>
                   </div>
 
                   <div>
-                     <h3 className="text-xl font-semibold mb-2">13.4. Personal Data Breach</h3>
-                     <p className="mb-2"><strong>13.4.1</strong> The Processor shall, without undue delay, notify the Controller after becoming aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed (“Personal Data Breach”).</p>
-                     <p className="mb-2"><strong>13.4.2</strong> The Processor's notification shall include all information referred to in Article 33(3) of the GDPR.</p>
-                     <p><strong>13.4.3</strong> The parties agree that the Controller is solely responsible for and has the sole right to determine: (a) whether to provide notice of the Personal Data Breach to any data subjects, supervisory authorities, or others; and (b) how such notices shall be sent.</p>
+                     <h3 className="text-xl font-semibold mb-2">12.4. Personal Data Breach</h3>
+                     <p className="mb-2"><strong>12.4.1</strong> The Processor shall, without undue delay, notify the Controller after becoming aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed (“Personal Data Breach”).</p>
+                     <p className="mb-2"><strong>12.4.2</strong> The Processor's notification shall include all information referred to in Article 33(3) of the GDPR.</p>
+                     <p><strong>12.4.3</strong> The parties agree that the Controller is solely responsible for and has the sole right to determine: (a) whether to provide notice of the Personal Data Breach to any data subjects, supervisory authorities, or others; and (b) how such notices shall be sent.</p>
                   </div>
 
                   <div>
-                     <h3 className="text-xl font-semibold mb-2">13.5. Subprocessors</h3>
-                     <p className="mb-2"><strong>13.5.1</strong> If the Processor appoints a third-party subcontractor to provide the services, or parts of it, and that requires the subcontractor's processing of personal data, the subcontractor shall be considered as Sub Processor in the meaning of the Data Protection Act.</p>
-                     <p className="mb-2"><strong>13.5.2</strong> The Processor may only authorize a Sub-Processor to process personal data if the Processor has entered into a written agreement with the Sub-Processor that contains terms substantially the same as those set out in these Terms in relation to the security of personal data.</p>
-                     <p className="mb-2"><strong>13.5.3</strong> Where the Sub-Processor fails to fulfill its obligations under such a written agreement, the Processor remains fully liable to the Controller.</p>
-                     <p><strong>13.5.4</strong> If the Processor appoints a new Sub-Processor, it shall inform the Controller thereof and provide the Controller 14 days to object to such an appointment.</p>
+                     <h3 className="text-xl font-semibold mb-2">12.5. Subprocessors</h3>
+                     <p className="mb-2"><strong>12.5.1</strong> If the Processor appoints a third-party subcontractor to provide the services, or parts of it, and that requires the subcontractor's processing of personal data, the subcontractor shall be considered as Sub Processor in the meaning of the Data Protection Act.</p>
+                     <p className="mb-2"><strong>12.5.2</strong> The Processor may only authorize a Sub-Processor to process personal data if the Processor has entered into a written agreement with the Sub-Processor that contains terms substantially the same as those set out in these Terms in relation to the security of personal data.</p>
+                     <p className="mb-2"><strong>12.5.3</strong> Where the Sub-Processor fails to fulfill its obligations under such a written agreement, the Processor remains fully liable to the Controller.</p>
+                     <p><strong>12.5.4</strong> If the Processor appoints a new Sub-Processor, it shall inform the Controller thereof and provide the Controller 14 days to object to such an appointment.</p>
                   </div>
 
                   <div>
-                      <h3 className="text-xl font-semibold mb-2">13.6. Transfer of Personal Data Outside the EEA</h3>
-                      <p><strong>13.6.1</strong> The Processor must not transfer personal data outside the European Economic Area (“EEA”) without the Controller's consent.</p>
+                      <h3 className="text-xl font-semibold mb-2">12.6. Transfer of Personal Data Outside the EEA</h3>
+                      <p><strong>12.6.1</strong> The Processor must not transfer personal data outside the European Economic Area (“EEA”) without the Controller's consent.</p>
                   </div>
 
                   <div>
-                      <h3 className="text-xl font-semibold mb-2">13.7. Data Subject Requests</h3>
-                      <p className="mb-2"><strong>13.7.1</strong> The Processor shall assist the Controller, to the extent reasonable taking into consideration the nature of the processing, in responding to data subject requests. All work carried out by the Processor in relation to such assistance shall be subject to the parties' Software Agreement and/or the Processor's price list at any given time.</p>
-                      <p><strong>13.7.2</strong> The responsibility for responding to requests from data subjects shall always remain with the Controller.</p>
+                      <h3 className="text-xl font-semibold mb-2">12.7. Data Subject Requests</h3>
+                      <p className="mb-2"><strong>12.7.1</strong> The Processor shall assist the Controller, to the extent reasonable taking into consideration the nature of the processing, in responding to data subject requests. All work carried out by the Processor in relation to such assistance shall be subject to the parties' Software Agreement and/or the Processor's price list at any given time.</p>
+                      <p><strong>12.7.2</strong> The responsibility for responding to requests from data subjects shall always remain with the Controller.</p>
                   </div>
 
                   <div>
-                     <h3 className="text-xl font-semibold mb-2">13.8. Data Protection Impact Assessment and Prior Consultation</h3>
-                     <p className="mb-2"><strong>13.8.1</strong> Upon prior written request of the Controller, the Processor shall assist the Controller to carry out data protection impact assessment (DPIA) and in conducting prior consultation with the Danish Data Protection Authority (Datatilsynet). Such assistance shall however always take into account the nature of processing and the information available to the Processor.</p>
-                     <p><strong>13.8.2</strong> All assistance with DPIA or prior consultation shall be subject to service fees in accordance with the Processor's price list at any given time.</p>
-                  </div>
-
-                  <div>
-                     <h3 className="text-xl font-semibold mb-2">13.9. Compliance and Audit</h3>
-                     <p className="mb-2"><strong>13.9.1</strong> The Processor shall make all information available to the Controller that are necessary to demonstrate compliance with these Terms, and to the extent possible taking into consideration the nature of the service, allow for and contribute to audits by the Controller, or an auditor mandated by the Controller, for the purpose of verifying the Processor's compliance with these Terms. The audits shall only relate to the services carried out by the Processor on behalf of the Controller and the scope of the audits shall take into account the Processor's obligations, such as in relation to security. Auditors and scope of audits are thus subject to the Processor's consent.</p>
-                     <p className="mb-2"><strong>13.9.2</strong> The Processor shall furthermore, in accordance with legal obligations thereof, ensure regulators' access to the personal data processed by the Processor on behalf of Controllers which are classified as regulated entities.</p>
-                     <p><strong>13.9.3</strong> All assistance in relation to audits shall be subject to service fees in accordance with the Processor's price list at any given time.</p>
-                  </div>
-
-                  <div>
-                      <h3 className="text-xl font-semibold mb-2">13.10. Duration, Data Return and Deletion</h3>
-                      <p className="mb-2"><strong>13.10.1</strong> These Terms shall remain in full force and effect as long as (a) The parties' Software Agreement remains in effect, or (b) The Processor provides the Controller with one or more services.</p>
-                      <p className="mb-2"><strong>13.10.2</strong> Upon termination of service, the Processor shall, at the choice of the Controller, delete or return all personal and client data to the Controller and delete existing copies. If the return of data calls for substantive work on behalf of the Processor, such work shall be subject to service fee in accordance with the Processor's price list at any given time.</p>
-                      <p><strong>13.10.3</strong> The Processor shall ensure data on security weaknesses and proofs thereof will not cause damage for the Customer, e.g. security and data breaches.</p>
-                  </div>
-
-                  <div>
-                      <h3 className="text-xl font-semibold mb-2">13.11. Notifications to the Controller</h3>
-                      <p className="mb-2"><strong>13.11.1</strong> Notifications to the Controller based on these Terms shall be sent to the Controller's registered contact person. The Controller is responsible for providing the Processor with contact details of such a person. If contact persons are listed in the parties' Software Agreement, a notification shall be sent to that contact person, unless parties have agreed otherwise.</p>
-                      <p className="mb-2"><strong>13.11.2</strong> The Controller is responsible for providing the Processor with updated contact details.</p>
-                      <p><strong>13.11.3</strong> The Processor can also publish all notifications, subject to these Terms, on its websites, on the condition that the Controller's contact persons shall be informed of such notifications and have the opportunity to register for such notifications.</p>
-                  </div>
-
-                  <div>
-                       <h3 className="text-xl font-semibold mb-2">13.12. Miscellaneous</h3>
-                       <p className="mb-2"><strong>13.12.1</strong> The parties' Software Agreement and Defend Denmark's General Terms shall, in addition to these Terms, apply to the Processor's processing of personal data on behalf of the Controller, including provisions regarding limitation of liability. In the event of any inconsistency between the provisions of these Terms and the provisions of Defend Denmark's General Terms or the parties' Software Agreement, the provisions of these Terms shall prevail.</p>
-                       <p className="mb-2"><strong>13.12.2</strong> These Terms are governed by the laws of Denmark. Any disputes arising from or in connection with these Terms shall be brought exclusively before the City Court of Copenhagen.</p>
-                       <p><strong>13.12.3</strong> The Processor reserves the right to amend these Terms in accordance with changes in relevant law or regulations or due to changes in how personal data is processed. The Processor shall inform the Controller of any changes made to these Terms.</p>
-                  </div>
-                </div>
-              </section>
-
-              {/* Section 14 */}
+                     <h3 className="text-xl font-semibold mb-2">12.8. Data Protection Impact Assessment and Prior Consultation</h3>
+                     <p cla3 */}
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-primary mb-4">14. Automated Decision-Making</h2>
-                <p>
-                  We do not employ automated decision-making that produces legal or similarly significant effects on users (GDPR Art. 22).
-                </p>
-              </section>
+                <h2 className="text-2xl font-semibold text-primary mb-4">13
 
-              {/* Section 15 */}
+                  <div>
+                     <h3 className="text-xl font-semibold mb-2">12.9. Compliance and Audit</h3>
+                     <p className="mb-2"><strong>12.9.1</strong> The Processor shall make all information available to the Controller that are necessary to demonstrate compliance with these Terms, and to the extent possible taking into consideration the nature of the service, allow for and contribute to audits by the Controller, or an auditor mandated by the Controller, for the purpose of verifying the Processor's compliance with these Terms. The audits shall only relate to the services carried out by the Processor on behalf of the Controller and the scope of the audits shall take into account the Processor's obligations, such as in relation to security. Auditors and scope of audits are thus subject to the Processor's consent.</p>
+                     <p className="mb-2"><strong>12.9.2</strong> The Processor shall furthermore, in accordance with legal obligations thereof, ensure regulators' access to the personal data processed by the Processor on behalf of Controllers which are classified as regulated entities.</p>
+                     <p><st4 */}
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-primary mb-4">15. Changes to This Policy</h2>
-                <p className="mb-4">
-                  We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or for other operational reasons.
-                </p>
-                <p className="mb-4">
-                  When we make changes, we will revise the "Effective Date" at the top of this page. If the changes are significant, we will notify you through appropriate means, such as by email or via a notice on our website, before they take effect. Material changes will be announced at least 14 days in advance via e-mail and in-app notice.
-                </p>
-                <p>
-                  We encourage you to review this Privacy Policy periodically to stay informed about how we protect your personal data.
-                </p>
+                <h2 className="text-2xl font-semibold text-primary mb-4">14
+                  <div>
+                      <h3 className="text-xl font-semibold mb-2">12.10. Duration, Data Return and Deletion</h3>
+                      <p className="mb-2"><strong>12.10.1</strong> These Terms shall remain in full force and effect as long as (a) The parties' Software Agreement remains in effect, or (b) The Processor provides the Controller with one or more services.</p>
+                      <p className="mb-2"><strong>12.10.2</strong> Upon termination of service, the Processor shall, at the choice of the Controller, delete or return all personal and client data to the Controller and delete existing copies. If the return of data calls for substantive work on behalf of the Processor, such work shall be subject to service fee in accordance with the Processor's price list at any given time.</p>
+                      <p><strong>12.10.3</strong> The Processor shall ensure data on security weaknesses and proofs thereof will not cause damage for the Customer, e.g. security and data breaches.</p>
+                  </div>
+
+                  <div>
+                      <h3 className="text-xl font-semibold mb-2">12.11. Notifications to the Controller</h3>
+                      <p className="mb-2"><strong>12.11.1</strong> Notifications to the Controller based on these Terms shall be sent to the Controller's registered contact person. The Controller is responsible for providing the Processor with contact details of such a person. If contact persons are listed in the parties' Software Agreement, a notification shall be sent to that contact person, unless parties have agreed otherwise.</p>
+                      <p className="mb-2"><strong>12.11.2</strong> The Controller is responsible for providing the Processor with updated contact details.</p>
+                      <p><s5 */}
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-primary mb-4">15
+                  <div>
+                       <h3 className="text-xl font-semibold mb-2">12.12. Miscellaneous</h3>
+                       <p className="mb-2"><strong>12.12.1</strong> The parties' Software Agreement and Defend Denmark's General Terms shall, in addition to these Terms, apply to the Processor's processing of personal data on behalf of the Controller, including provisions regarding limitation of liability. In the event of any inconsistency between the provisions of these Terms and the provisions of Defend Denmark's General Terms or the parties' Software Agreement, the provisions of these Terms shall prevail.</p>
+                       <p className="mb-2"><strong>12.12.2</strong> These Terms are governed by the laws of Denmark. Any disputes arising from or in connection with these Terms shall be brought exclusively before the City Court of Copenhagen.</p>
+                       <p><strong>12
               </section>
 
               {/* Section 16 */}
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-primary mb-4">16. Contact</h2>
-                <p className="mb-4">Questions, requests or complaints:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Email: <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
-                  <li>Postal: Defend Denmark ApS, Reventlowsgade 18, 3th, 1651 KBH V</li>
-                </ul>
-              </section>
-
-              {/* Section 17 */}
-              <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-primary mb-4">17. Data Protection Agency</h2>
+                <h2 className="text-2xl font-semibold text-primary mb-4">16. Data Protection Agency</h2>
                 <p>
                   For any complaint regarding your personal data, you have the right to lodge a complaint with the competent data protection authority, Datatilsynet (Danish Data Protection Agency) at <a href="https://www.datatilsynet.dk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.datatilsynet.dk</a>.
                 </p>
