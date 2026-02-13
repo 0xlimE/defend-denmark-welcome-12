@@ -323,7 +323,7 @@ const translations = {
     'footer.company': 'Virksomhed',
     'footer.companyName': 'Defend Denmark ApS',
     'footer.address1': 'Rodosvej 15',
-    'footer.address2': '23000 København V, DK',
+    'footer.address2': '2300 København S, DK',
     'footer.about': 'Om os',
     'footer.forResearchers': 'For Etiske Hackere',
     'footer.forCompanies': 'For Virksomheder',
