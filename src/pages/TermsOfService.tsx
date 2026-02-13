@@ -26,7 +26,7 @@ const TermsOfService = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">1. General</h2>
                 <p className="mb-4">
-                  These General Terms and Conditions (the "T&Cs") apply to all services provided by Defend Denmark ApS, CVR 45824578, Reventlowsgade 18, 3th, 1651 KBH V (hereinafter "Defend Denmark" or the "Company") to its customers.
+                  These General Terms and Conditions (the "T&Cs") apply to all services provided by Defend Denmark ApS, CVR 45824578, Rodosvej 15, 2300 KBH S (hereinafter "Defend Denmark" or the "Company") to its customers.
                 </p>
                 <p className="mb-4">
                   These T&Cs apply to all agreements between Defend Denmark and its customers concerning the purchase of services, including offers, work requests and job descriptions, unless otherwise agreed in writing.
@@ -306,7 +306,7 @@ const TermsOfService = () => {
                 <p className="mb-4">For questions regarding these Terms of Service:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Email: <a href="mailto:info@defenddenmark.dk" className="text-primary hover:underline">info@defenddenmark.dk</a></li>
-                  <li>Postal: Defend Denmark ApS, Reventlowsgade 18, 3th, 1651 KBH V, Denmark</li>
+                  <li>Postal: Defend Denmark ApS, Rodosvej 15, 2300 KBH S, Denmark</li>
                   <li>CVR: 45824578</li>
                 </ul>
                 <p className="mt-6 text-muted-foreground text-sm">Last updated: 23 Oct 2025</p>

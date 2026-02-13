@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-semibold text-primary mb-4">1. SUBJECT MATTER</h2>
                 
                 <p className="mb-4">
-                  <strong>1.1</strong> These terms on the Processing of Personal Data ("Terms") apply to all processing of personal data by Defend Denmark ApS, CVR 45824578, Reventlowsgade 18, 3th, 1651 KBH V ("Processor" or "Defend Denmark") where Defend Denmark acts as a data processor when providing customer ("Controller") service.
+                  <strong>1.1</strong> These terms on the Processing of Personal Data ("Terms") apply to all processing of personal data by Defend Denmark ApS, CVR 45824578, Rodosvej 15, 2300 KBH S ("Processor" or "Defend Denmark") where Defend Denmark acts as a data processor when providing customer ("Controller") service.
                 </p>
 
                 <p className="mb-4">
@@ -278,7 +278,7 @@ const PrivacyPolicy = () => {
                 <p className="mb-4">Questions, requests or complaints:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Email: <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
-                  <li>Postal: Defend Denmark ApS, Reventlowsgade 18, 3th, 1651 KBH V</li>
+                  <li>Postal: Defend Denmark ApS, Rodosvej 15, 2300 KBH S</li>
                 </ul>
                 <p className="mt-4">
                   Supervisory Authority: Datatilsynet (Danish Data Protection Agency) – <a href="https://www.datatilsynet.dk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.datatilsynet.dk</a>
