@@ -34,7 +34,7 @@ export const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="h-14 text-base sm:text-lg px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
-                <a href="https://forms.cloud.microsoft/e/PafMKprbP9" target="_blank" rel="noopener noreferrer">
+                <a href="https://onboarding.defenddenmark.dk/" target="_blank" rel="noopener noreferrer">
                   {t('hero.bookDemo')}
                 </a>
               </Button>

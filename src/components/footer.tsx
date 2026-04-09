@@ -38,7 +38,7 @@ export const Footer = () => {
               className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary font-semibold px-8 py-3"
             >
               <a 
-                href="https://forms.cloud.microsoft/e/PafMKprbP9" 
+                href="https://onboarding.defenddenmark.dk/" 
                 rel="noopener noreferrer"
               >
                 {t('footer.prelaunch.button')}
