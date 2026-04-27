@@ -101,8 +101,8 @@ const translations = {
     'fund.fundDesc': 'Building resources to protect Denmark\'s digital infrastructure',
     'fund.companyContrib': 'Company Contributions',
     'fund.expertContrib': 'Expert Contributions',
-    'fund.prelaunch': 'Pre-launch phase',
-    'fund.launchText': 'Fund values will be displayed once Defend Denmark officially launches and begins operations.',
+    'fund.prelaunch': 'Current balance',
+    'fund.launchText': 'The fund grows with every vulnerability found. Companies contribute 10% on top of each bounty payment.',
     
     // Footer
     'footer.tagline': 'Securing Denmark\'s digital future through collaborative cybersecurity excellence.',
@@ -149,8 +149,8 @@ const translations = {
     // About Page
     'about.hero.title': 'About Defend Denmark',
     'about.hero.subtitle': 'A secure digital future for Denmark through innovative cybersecurity and ethical hacking',
-    'about.prelaunch.title': 'Pre-Launch Phase',
-    'about.prelaunch.description': 'We are currently in the exciting pre-launch phase, fine-tuning our platform and building partnerships with Danish companies. We are actively onboarding both defenders and companies, please contact us if you are interested.',
+    'about.prelaunch.title': 'Now Live',
+    'about.prelaunch.description': 'Defend Denmark is officially launched and operational. We are actively onboarding both security researchers and companies — reach out if you want to get started with your bug bounty program or join as an ethical hacker.',
     'about.hackers.title': 'Ready Security Researchers',
     'about.hackers.description': 'We have assembled a talented community of ethical hackers who are passionate about cybersecurity and ready to help Danish companies identify and fix security vulnerabilities. Our researchers undergo thorough vetting to ensure the highest standards of professionalism and integrity.',
     'about.vision.title': 'Our Vision',
@@ -312,8 +312,8 @@ const translations = {
     'fund.fundDesc': 'Sparer midler sammen til at beskytte Danmarks digitale infrastruktur',
     'fund.companyContrib': 'Virksomhedsbidrag',
     'fund.expertContrib': 'Hackerbidrag',
-    'fund.prelaunch': 'Pre-launch fase',
-    'fund.launchText': 'Fondens status vil blive vist, når Defend Denmark officielt lancerer.',
+    'fund.prelaunch': 'Aktuel saldo',
+    'fund.launchText': 'Fonden vokser med hver fundet sårbarhed. Virksomheder bidrager med 10% oven i hver bounty-betaling.',
     
     // Footer
     'footer.tagline': 'Sikrer det digitale Danmark med etisk hacking',
@@ -360,8 +360,8 @@ const translations = {
     // About Page
     'about.hero.title': 'Om Defend Denmark',
     'about.hero.subtitle': 'En sikker digital fremtid for Danmark gennem etisk hacking',
-    'about.prelaunch.title': 'Pre-Launch Fase',
-    'about.prelaunch.description': 'Vi er i øjeblikket i den spændende pre-launch fase, hvor vi finjusterer vores platform og bygger partnerskaber med danske virksomheder. Vi onboarder aktivt virksomheder og etiske hackere, tag endelig kontakt hvis du/i er intereseret.',
+    'about.prelaunch.title': 'Nu Live',
+    'about.prelaunch.description': 'Defend Denmark er officielt lanceret og operationelt. Vi onboarder aktivt etiske hackere og virksomheder — tag kontakt, hvis I ønsker at komme i gang med et bug bounty program eller vil tilmelde jer som etisk hacker.',
     'about.hackers.title': 'Etiske hackere står klar',
     'about.hackers.description': 'Vi har samlet et talentfuldt fællesskab af etiske hackere, der brænder for cybersikkerhed og er klar til at hjælpe danske virksomheder med at identificere og rette sårbarheder. Vores etiske hackere gennemgår grundig kontrol for at sikre de højeste standarder for professionalisme og integritet.',
     'about.vision.title': 'Vores Vision',

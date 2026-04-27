@@ -158,14 +158,8 @@ export const CommunityFund = () => {
 
                 <div className="space-y-4">
                   <div className="p-4 bg-background rounded-lg border border-border/50">
-                    <div className="text-2xl font-bold text-primary mb-1">—</div>
-                    <div className="text-sm text-blue/70">{t('fund.companyContrib')}</div>
-                    <div className="text-xs text-blue/70 mt-1">{t('fund.prelaunch')}</div>
-                  </div>
-
-                  <div className="p-4 bg-background rounded-lg border border-border/50">
-                    <div className="text-2xl font-bold text-primary mb-1">—</div>
-                    <div className="text-sm text-blue/70">{t('fund.expertContrib')}</div>
+                    <div className="text-3xl font-bold text-primary mb-1">11.000 DKK</div>
+                    <div className="text-sm text-blue/70">{t('fund.fundTitle')}</div>
                     <div className="text-xs text-blue/70 mt-1">{t('fund.prelaunch')}</div>
                   </div>
                 </div>
