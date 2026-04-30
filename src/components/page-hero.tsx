@@ -13,20 +13,20 @@ interface PageHeroProps {
 
 export const PageHero = ({ title, subtitle, image, children }: PageHeroProps) => {
   return (
-    <section className="pt-12 md:pt-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden h-[350px] md:h-[300px] lg:h-[320px]">
+    <section className="pt-12 md:pt-16 pb-8 md:pb-0 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden min-h-[350px] md:min-h-[300px] lg:min-h-[320px]">
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.3) 1px, transparent 0)`,
           backgroundSize: '24px 24px'
         }}></div>
       </div>
-      <div className="container mx-auto px-4 max-w-5xl relative h-full">
-        <div className="flex flex-col gap-0 md:grid md:grid-cols-2 md:gap-4 md:gap-6 lg:gap-8 xl:gap-12 h-full">
-          <div className="flex flex-col justify-center order-1">
+      <div className="container mx-auto px-4 max-w-5xl relative min-h-full">
+        <div className="flex flex-col gap-0 md:grid md:grid-cols-2 md:gap-4 md:gap-6 lg:gap-8 xl:gap-12 min-h-[inherit]">
+          <div className="flex flex-col justify-center order-1 py-4 md:py-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 text-blue leading-tight">
               {title}
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-blue/80 mb-4 md:mb-6 lg:mb-8 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-blue/80 mb-4 md:mb-6 lg:mb-8 leading-relaxed">
               {subtitle}
             </p>
             {children}

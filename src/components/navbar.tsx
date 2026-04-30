@@ -40,13 +40,13 @@ export const Navbar = () => {
             >
               {t('nav.researchers')}
             </Link>
-            <Link 
+            <Link
               to="/bug-bounty"
               className="text-blue hover:text-primary transition-colors px-2 py-1 font-medium text-sm"
             >
               {t('nav.bugBounty')}
             </Link>
-            <Link 
+            <Link
               to="/community-fund"
               className="text-blue hover:text-primary transition-colors px-2 py-1 font-medium text-sm"
             >
@@ -95,14 +95,14 @@ export const Navbar = () => {
             >
               {t('nav.researchers')}
             </Link>
-            <Link 
+            <Link
               to="/bug-bounty"
               className="block text-blue hover:text-primary transition-colors px-2 py-1 font-medium text-sm"
               onClick={closeMenu}
             >
               {t('nav.bugBounty')}
             </Link>
-            <Link 
+            <Link
               to="/community-fund"
               className="block text-blue hover:text-primary transition-colors px-2 py-1 font-medium text-sm"
               onClick={closeMenu}
