@@ -4,7 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { useLanguage } from "@/contexts/language-context";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { UserPlus, Search, FileText, CheckCircle, DollarSign, Trophy, Building, Clock, HeadphonesIcon, Gamepad2, Shield } from "lucide-react";
+import { UserPlus, Search, FileText, CheckCircle, DollarSign, Trophy, Building, Clock, HeadphonesIcon, Gamepad2, Shield, ExternalLink } from "lucide-react";
 const Researchers = () => {
   const {
     t
@@ -150,7 +150,18 @@ const Researchers = () => {
                       </div>
                       <div className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-blue/70">{t('researchers.requirements.agreement')}</span>
+                        <span className="text-blue/70">
+                          {t('researchers.requirements.agreement')}{" "}
+                          <a
+                            href="/site-uploads/DK_Defenders_Agreement_May'26.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-baseline gap-1 text-primary font-medium hover:underline underline-offset-4"
+                          >
+                            {t('researchers.requirements.agreement.link')}
+                            <ExternalLink className="h-3 w-3 self-center flex-shrink-0" aria-hidden="true" />
+                          </a>
+                        </span>
                       </div>
                       <div className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>

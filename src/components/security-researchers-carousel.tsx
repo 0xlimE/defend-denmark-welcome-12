@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Shield, CheckCircle, FileText, User, Award, Clock } from "lucide-react";
+import { Shield, CheckCircle, FileText, User, Award, Clock, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 
 interface Vulnerability {
@@ -205,6 +205,16 @@ export const SecurityResearchersCarousel = () => {
         <p className="text-sm text-muted-foreground/80 mt-2 italic">
           {t('spotlight.disclaimer')}
         </p>
+        <a
+          href="/site-uploads/DK_Defenders_Agreement_May'26.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-primary hover:underline underline-offset-4"
+        >
+          <FileText className="h-4 w-4" aria-hidden="true" />
+          {t('spotlight.viewAgreement')}
+          <ExternalLink className="h-3 w-3" aria-hidden="true" />
+        </a>
       </div>
 
       <Carousel className="w-full max-w-8xl mx-auto">
@@ -241,10 +251,17 @@ export const SecurityResearchersCarousel = () => {
                             </Badge>
                           )}
                           {researcher.signedAgreement && (
-                            <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                              <FileText className="w-3 h-3 mr-1" />
-                              {t('spotlight.agreementSigned')}
-                            </Badge>
+                            <a
+                              href="/site-uploads/DK_Defenders_Agreement_May'26.pdf"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title={t('spotlight.viewAgreement')}
+                            >
+                              <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 transition-colors cursor-pointer">
+                                <FileText className="w-3 h-3 mr-1" />
+                                {t('spotlight.agreementSigned')}
+                              </Badge>
+                            </a>
                           )}
                           {researcher.signedNDA && (
                             <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
