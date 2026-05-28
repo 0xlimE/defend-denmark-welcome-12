@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/language-context";
 import ScrollToTop from "@/components/ScrollToTop";
+import { ExternalRedirect } from "@/components/external-redirect";
 import Index from "./pages/Index";
 import Companies from "./pages/Companies";
 import Researchers from "./pages/Researchers";
@@ -42,6 +43,12 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route
+              path="/summerhacks"
+              element={
+                <ExternalRedirect to="https://partiful.com/e/TB7s2uJn6CFaEbShXMSs?c=twaM1Y5W" />
+              }
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
