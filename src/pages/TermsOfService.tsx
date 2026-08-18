@@ -176,9 +176,12 @@ const TermsOfService = () => {
                   <li>any other liability which cannot lawfully be excluded or limited.</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold mb-3">6.6 Insurance</h3>
+                <h3 className="text-xl font-semibold mb-3">6.6 Allocation of Risk and Insurance</h3>
                 <p className="mb-4">
-                  Defend Denmark maintains such professional liability insurance as is specified in the individual customer agreement, covering Defend Denmark's own performance of the services. The parties acknowledge that liability insurance in respect of the acts or omissions of independent Defenders is not available in the insurance market for services of this nature, and that Defend Denmark's obligations in respect of Defenders are those set out in clause 6.2 and in the individual customer agreement.
+                  The limitation of liability in clause 6.3 reflects the agreed allocation of risk between the parties, having regard to the nature of the services, the controls set out in clause 6.2 and Section 17, and the level of the fees payable.
+                </p>
+                <p className="mb-4">
+                  The parties acknowledge that liability insurance in respect of the acts or omissions of independent security researchers is not available in the insurance market for services of this nature, and that providers of comparable bug bounty services do not carry such cover. These T&Cs do not oblige Defend Denmark to maintain insurance. Any insurance requirement must be expressly agreed in the individual customer agreement.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">6.7 Employees</h3>
