@@ -111,12 +111,15 @@ export const Footer = () => {
             </p>
 
           </div>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-4 md:mt-0">
                         <Link to="/privacy-policy" className="text-blue/70 hover:text-primary transition-colors text-sm">
               Privacy Policy
             </Link>
             <Link to="/terms-of-service" className="text-blue/70 hover:text-primary transition-colors text-sm">
               Terms of Service
+            </Link>
+            <Link to="/data-protection" className="text-blue/70 hover:text-primary transition-colors text-sm">
+              Data Protection
             </Link>
             <a href="https://www.linkedin.com/company/defend-denmark" target="_blank" rel="noopener noreferrer" className="text-blue/70 hover:text-primary transition-colors" aria-label="LinkedIn">
               <Linkedin size={20} />

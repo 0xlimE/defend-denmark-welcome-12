@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/language-context";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ExternalRedirect } from "@/components/external-redirect";
@@ -18,6 +18,7 @@ import CommunityFundPage from "./pages/CommunityFundPage";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import GdprRole from "./pages/GdprRole";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,8 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/data-protection" element={<GdprRole />} />
+            <Route path="/data-processing-terms" element={<Navigate to="/data-protection" replace />} />
             <Route
               path="/summerhacks"
               element={
