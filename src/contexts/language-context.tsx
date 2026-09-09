@@ -89,7 +89,7 @@ const translations = {
     'fund.activate.desc2': 'With this, we approach Denmark\'s cyber security in a holistic way, but Defend Denmark\'s future vision is that all companies and institutions in Denmark can use the bug bounty platform to increase their cyber security.',
     'fund.structure.title': 'Structure of the fund',
     'fund.structure.desc1': 'The community fund is financed on the one hand by Defend Denmark\'s customers and on the other hand by the community of ethical hackers.',
-    'fund.structure.desc2': 'The customer\'s contribution is based on the paid reward money for security vulnerabilities, but on top of those payments a 10% flat fee is added, which is the customer\'s contribution to the fund every time they pay for a vulnerability. The community fund therefore grows with each security vulnerability found.',
+    'fund.structure.desc2': 'The customer\'s contribution is based on the paid reward money for security vulnerabilities, but on top of those payments a fee of 7-10% is added, depending on the contract, which is the customer\'s contribution to the fund every time they pay for a vulnerability. The community fund therefore grows with each security vulnerability found.',
     'fund.structure.desc3': 'Ethical hackers can also make voluntary contributions to the fund from their own reward money.',
     'fund.structure.desc4': 'The reward money paid out of the fund takes into account its status at any given time and the potential impact of the vulnerabilities on Denmark\'s digital community.',
     'fund.collab.title': 'Collaborative Security',
@@ -103,7 +103,7 @@ const translations = {
     'fund.companyContrib': 'Company Contributions',
     'fund.expertContrib': 'Expert Contributions',
     'fund.prelaunch': 'Current balance',
-    'fund.launchText': 'The fund grows with every vulnerability found. Companies contribute 10% on top of each bounty payment.',
+    'fund.launchText': 'The fund grows with every vulnerability found. Companies contribute 7-10% on top of each bounty payment, depending on their contract.',
     
     // Footer
     'footer.tagline': 'Securing Denmark\'s digital future through collaborative cybersecurity excellence.',
@@ -505,7 +505,7 @@ const translations = {
     'fund.activate.desc2': 'Defend Denmarks fremtidige vision er, at alle virksomheder og institutioner i Danmark kan bruge bug bounty platformen til at øge deres cybersikkerhed.',
     'fund.structure.title': 'Fondens struktur',
     'fund.structure.desc1': 'Fællesskabsfonden finansieres på den ene side af Defend Denmarks kunder og på den anden side af fællesskabet af etiske hackere.',
-    'fund.structure.desc2': 'Kundens bidrag er baseret på de betalte dusører, oven på disse dusører tilføjes et fladt gebyr på 10%, som er kundens bidrag til fonden, hver gang de betaler for en sårbarhed. Fællesskabsfonden vokser derfor med hver sårbarhed som der bliver fundet.',
+    'fund.structure.desc2': 'Kundens bidrag er baseret på de betalte dusører, oven på disse dusører tilføjes et gebyr på 7-10% afhængigt af kontrakten, som er kundens bidrag til fonden, hver gang de betaler for en sårbarhed. Fællesskabsfonden vokser derfor med hver sårbarhed som der bliver fundet.',
     'fund.structure.desc3': 'Etiske hackere kan også yde frivillige bidrag til fonden fra deres egne dusører som de får udbetalt.',
     'fund.structure.desc4': 'Dusører udbetalt fra fonden korrelerer med hvad der er indestående i fonden på et givent tidspunkt, samt alvorligheden af den rapporterede sårbarhed.',
     'fund.collab.title': 'Samarbejde om  Sikkerhed',
@@ -519,7 +519,7 @@ const translations = {
     'fund.companyContrib': 'Virksomhedsbidrag',
     'fund.expertContrib': 'Hackerbidrag',
     'fund.prelaunch': 'Aktuel saldo',
-    'fund.launchText': 'Fonden vokser med hver fundet sårbarhed. Virksomheder bidrager med 10% oven i hver bounty-betaling.',
+    'fund.launchText': 'Fonden vokser med hver fundet sårbarhed. Virksomheder bidrager med 7-10% oven i hver bounty-betaling, afhængigt af deres kontrakt.',
     
     // Footer
     'footer.tagline': 'Sikrer det digitale Danmark med etisk hacking',

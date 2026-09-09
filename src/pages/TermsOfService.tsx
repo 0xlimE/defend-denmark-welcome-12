@@ -57,17 +57,32 @@ const TermsOfService = () => {
                   If an invoice or other contractual obligations fall due on the date of maturity, the customer must pay penalty interest in accordance with Danish law on interest rates (Renteloven).
                 </p>
 
-                <h3 className="text-xl font-semibold mb-3">2.2 Outlay</h3>
+                <h3 className="text-xl font-semibold mb-3">2.2 Bounty Rewards, Service Fee and Community Fund Contribution</h3>
+                <p className="mb-4">
+                  Where the customer operates a bug bounty or vulnerability disclosure program through Defend Denmark, the customer pays the bounty reward awarded for each accepted vulnerability report. In addition to the reward amount, Defend Denmark charges:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mb-4">
+                  <li>a <strong>service fee</strong> of between 3% and 5% of the reward amount, covering Defend Denmark's triage, validation, platform and payment handling; and</li>
+                  <li>a <strong>community fund contribution</strong> of between 7% and 10% of the reward amount, which is paid into the Defend Denmark Community Fund and used to reward security researchers for vulnerabilities reported in respect of organisations that do not have the means to pay rewards themselves.</li>
+                </ul>
+                <p className="mb-4">
+                  The exact percentages applicable to the customer within the above ranges are stated in the individual customer agreement or in the Company's price list. In the absence of such a statement, the service fee is 5% and the community fund contribution is 10%. Both fees are calculated on the reward amount excluding VAT and are invoiced together with the reward.
+                </p>
+                <p className="mb-4">
+                  The community fund contribution is not refundable once the underlying reward has been paid, and Defend Denmark determines in its sole discretion how funds in the Community Fund are allocated. The customer acquires no ownership interest in, or claim against, the Community Fund by making such contributions.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">2.3 Outlay</h3>
                 <p className="mb-4">
                   The customer shall pay for all costs incurred by Defend Denmark on behalf of the customer. If there are major expenses or costs, Defend Denmark will seek the customer's consent for such expenses beforehand.
                 </p>
 
-                <h3 className="text-xl font-semibold mb-3">2.3 Work Outside the Agreed Scope</h3>
+                <h3 className="text-xl font-semibold mb-3">2.4 Work Outside the Agreed Scope</h3>
                 <p className="mb-4">
                   Any work falling outside the agreed scope of the services requires the customer's prior written approval. Before commencing such work, Defend Denmark shall provide the customer with a written description of the additional work, the applicable fees and an estimate of the total cost. The customer has no payment obligation in respect of additional work that has not been approved in writing in advance.
                 </p>
 
-                <h3 className="text-xl font-semibold mb-3">2.4 Changes to Price Lists</h3>
+                <h3 className="text-xl font-semibold mb-3">2.5 Changes to Price Lists</h3>
                 <p className="mb-4">
                   Defend Denmark's price lists are updated every 12 months in accordance with the Danish consumer price index.
                 </p>
