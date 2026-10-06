@@ -120,7 +120,7 @@ const GdprRole = () => {
                   <strong>A.3.2</strong> This is achieved by design and by contract. Defenders are required, under the Defender Agreement and the program rules applicable to each customer program, to confine their testing to the assets within the approved scope, to stop testing and report immediately upon encountering personal data, and not to copy, download, retain, exfiltrate or upload personal data to the platform.
                 </p>
                 <p>
-                  <strong>A.3.3</strong> Customers are correspondingly required not to submit personal data to the platform, not to instruct Defend Denmark or any Defender to process personal data on their behalf, and to populate any test accounts used for authenticated testing with synthetic or test data only. See Section 3.3 of our <a href="/terms-of-service" className="text-primary hover:underline">General Terms and Conditions</a>.
+                  <strong>A.3.3</strong> Customers are correspondingly required not to submit personal data to the platform unless it is necessary for the provision of the services, and not to instruct Defend Denmark or any Defender to process personal data on their behalf. Testing is performed against the customer's live, externally facing assets, and personal data may therefore be encountered in the course of testing. Where the agreed scope includes authenticated testing, customers shall, so far as reasonably practicable, provide test accounts populated with synthetic or test data and otherwise limit the production personal data accessible through those accounts; where that is not practicable, appropriate compensating measures are agreed as part of the scope approval. See Section 3.3 of our <a href="/terms-of-service" className="text-primary hover:underline">General Terms and Conditions</a>.
                 </p>
               </section>
 
@@ -159,7 +159,7 @@ const GdprRole = () => {
                   <strong>A.6.1</strong> Defend Denmark implements appropriate technical and organizational measures to protect personal data against unauthorised or unlawful processing and against accidental loss, destruction or damage. A summary of these measures, and a current list of the sub-suppliers used in the operation of the platform including hosting locations, are available to customers and prospective customers on request at <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a>.
                 </p>
                 <p className="mb-4">
-                  <strong>A.6.2</strong> Defend Denmark may share anonymized and aggregated vulnerability data with DKCERT and SektorCERT to support national cybersecurity efforts. Such data will not contain any personal identifiers, and will not identify the customer or its systems without the customer's prior written consent.
+                  <strong>A.6.2</strong> Defend Denmark may share anonymized and aggregated vulnerability data with DKCERT and SektorCERT to support national cybersecurity efforts. Such data will not contain any personal identifiers. Any disclosure of a vulnerability or finding relating to a customer's own systems, assets or infrastructure requires that customer's prior written consent in each case, irrespective of whether the disclosure is aggregated, anonymized or otherwise does not name the customer, except where disclosure is required by applicable law. See Section 9 of our <a href="/terms-of-service" className="text-primary hover:underline">General Terms and Conditions</a>.
                 </p>
                 <p>
                   <strong>A.6.3</strong> Personal data will not be shared with third parties except as described in this document, in our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>, or where required by law.
@@ -259,6 +259,10 @@ const GdprRole = () => {
                 </p>
 
                 <p className="mb-4">
+                  <strong>B.4.1.a</strong> Where these Data Processing Terms apply to a given processing activity and a Defender processes personal data in the course of that activity, the Processor shall ensure that the Defender is bound by written obligations in relation to the security, confidentiality, minimisation and deletion of personal data which are no less onerous than those set out in these terms. The Processor remains liable to the Controller for such processing by a Defender as if the processing had been carried out by the Processor itself, subject to clause A.7. For the avoidance of doubt, this applies irrespective of whether the Defender is characterised as a Sub-Processor.
+                </p>
+
+                <p className="mb-4">
                   <strong>B.4.2</strong> The Processor may only authorize a Sub-Processor to process personal data if the Processor has entered into a written agreement with the Sub-Processor that contains terms substantially the same as those set out in these terms in relation to the security of personal data.
                 </p>
 
@@ -325,7 +329,7 @@ const GdprRole = () => {
                 </p>
 
                 <p>
-                  <strong>B.8.4</strong> All assistance in relation to audits shall be subject to service fees in accordance with the Processor's price list at any given time, unless otherwise agreed in the individual customer agreement.
+                  <strong>B.8.4</strong> Reporting and compliance information that the individual customer agreement provides for as part of the services, including consolidated summary reports and information demonstrating compliance with the requirements applicable to Defenders, is included in the agreed fees and is not charged under this clause. All other assistance in relation to audits shall be subject to service fees in accordance with the Processor's price list at any given time, unless otherwise agreed in the individual customer agreement.
                 </p>
               </section>
 

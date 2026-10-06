@@ -59,14 +59,14 @@ const TermsOfService = () => {
 
                 <h3 className="text-xl font-semibold mb-3">2.2 Bounty Rewards, Service Fee and Community Fund Contribution</h3>
                 <p className="mb-4">
-                  Where the customer operates a bug bounty or vulnerability disclosure program through Defend Denmark, the customer pays the bounty reward awarded for each accepted vulnerability report. In addition to the reward amount, Defend Denmark charges:
+                  Where the customer operates a bug bounty or vulnerability disclosure program through Defend Denmark, the customer pays the bounty reward awarded for each accepted vulnerability report. In addition to the reward amount, Defend Denmark charges a total fee of between 3% and 15% of the reward amount, comprising:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>a <strong>service fee</strong> of between 3% and 5% of the reward amount, covering Defend Denmark's triage, validation, platform and payment handling; and</li>
-                  <li>a <strong>community fund contribution</strong> of between 7% and 10% of the reward amount, which is paid into the Defend Denmark Community Fund and used to reward security researchers for vulnerabilities reported in respect of organisations that do not have the means to pay rewards themselves.</li>
+                  <li>a <strong>service fee</strong>, covering Defend Denmark's triage, validation, platform and payment handling; and</li>
+                  <li>a <strong>community fund contribution</strong>, which is paid into the Defend Denmark Community Fund and used to reward security researchers for vulnerabilities reported in respect of organisations that do not have the means to pay rewards themselves.</li>
                 </ul>
                 <p className="mb-4">
-                  The exact percentages applicable to the customer within the above ranges are stated in the individual customer agreement or in the Company's price list. In the absence of such a statement, the service fee is 5% and the community fund contribution is 10%. Both fees are calculated on the reward amount excluding VAT and are invoiced together with the reward.
+                  The total percentage applicable to the customer, and its division between the service fee and the community fund contribution, are stated in the individual customer agreement or in the Company's price list. Where the individual customer agreement states a single total fee payable on amounts paid to security researchers, that fee applies in place of both components of this clause 2.2, and no further service fee or community fund contribution is payable. The fee is calculated on the reward amount excluding VAT and is invoiced together with the reward.
                 </p>
                 <p className="mb-4">
                   The community fund contribution is not refundable once the underlying reward has been paid, and Defend Denmark determines in its sole discretion how funds in the Community Fund are allocated. The customer acquires no ownership interest in, or claim against, the Community Fund by making such contributions.
@@ -74,7 +74,7 @@ const TermsOfService = () => {
 
                 <h3 className="text-xl font-semibold mb-3">2.3 Outlay</h3>
                 <p className="mb-4">
-                  The customer shall pay for all costs incurred by Defend Denmark on behalf of the customer. If there are major expenses or costs, Defend Denmark will seek the customer's consent for such expenses beforehand.
+                  Defend Denmark shall obtain the customer's prior written approval before incurring any cost or expense on the customer's behalf. The customer shall pay such approved costs, and has no payment obligation in respect of costs incurred without prior written approval.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">2.4 Work Outside the Agreed Scope</h3>
@@ -87,7 +87,7 @@ const TermsOfService = () => {
                   Defend Denmark's price lists are updated every 12 months in accordance with the Danish consumer price index.
                 </p>
                 <p>
-                  Defend Denmark furthermore reserves the right to change the Company's price lists as needed with at least 30 days' notice. Fees agreed for a fixed term in an individual customer agreement are not affected by such changes during that term.
+                  Defend Denmark furthermore reserves the right to change the Company's price lists as needed with at least 30 days' notice. Fees agreed for a fixed term in an individual customer agreement are not affected by such changes during that term. Where the individual customer agreement sets out its own mechanism or timetable for revising the fees, that mechanism applies to those fees in place of this clause 2.5, and Defend Denmark may not change them otherwise during the term.
                 </p>
               </section>
 
@@ -100,7 +100,7 @@ const TermsOfService = () => {
                   The customer guarantees that it has the authority to entrust Defend Denmark with providing the agreed service and that the rights of third parties are fully respected in relation to that service, whether it is copyright, property rights or any other rights.
                 </p>
                 <p className="mb-4">
-                  The customer shall enable Defend Denmark to provide the agreed services, including by providing access to necessary systems and, as the case may be, a place of business, or as is necessary at any given time in Defend Denmark's opinion.
+                  The customer shall enable Defend Denmark to provide the agreed services, including by providing access to the systems within the agreed scope and such co-operation as is reasonably necessary for the performance of the services. Where the parties have expressly agreed that work is to be carried out at the customer's premises, the customer shall provide a suitable place to work.
                 </p>
                 <p className="mb-4">
                   Customers are responsible for the instructions and orders they give to Defend Denmark, as well as for the validity of the information provided to the Company.
@@ -119,7 +119,13 @@ const TermsOfService = () => {
 
                 <h3 className="text-xl font-semibold mb-3">3.3 Personal Data on the Platform</h3>
                 <p className="mb-4">
-                  The customer shall not submit personal data to the platform and shall not instruct Defend Denmark or any Defender to process personal data on the customer's behalf. Where the agreed scope includes authenticated testing, the customer shall provide test accounts populated with synthetic or test data only, and shall not expose production personal data to such accounts.
+                  The customer shall not submit personal data to the platform unless it is necessary for the provision of the services, and shall not instruct Defend Denmark or any Defender to process personal data on the customer's behalf.
+                </p>
+                <p className="mb-4">
+                  The parties acknowledge that the services are performed against the customer's live, externally facing assets, and that personal data may therefore be encountered in the course of testing. Defend Denmark shall ensure that Defenders are instructed to avoid accessing, copying, downloading or otherwise processing personal data, except to the minimum extent strictly necessary to document a vulnerability. Where the agreed scope includes authenticated testing, the customer shall, so far as reasonably practicable, provide test accounts populated with synthetic or test data and otherwise limit the production personal data accessible through those accounts. Where that is not practicable, the parties shall agree appropriate compensating measures as part of the scope approval.
+                </p>
+                <p className="mb-4">
+                  Personal data that is nevertheless encountered or incidentally included in a vulnerability submission is handled in accordance with Section 10, under which Defend Denmark acts as an independent data controller within the meaning of Article 28(10) GDPR.
                 </p>
                 <p>
                   See Section 10 and Part A of <a href="/data-protection" className="text-primary hover:underline">Our Role Under GDPR</a>.
@@ -165,15 +171,18 @@ const TermsOfService = () => {
                   Defend Denmark is responsible for the performance of its own obligations, including the selection, verification, contracting, instruction, monitoring and suspension of Defenders, and for the acts and omissions of Defenders carried out within the agreed scope and in accordance with the applicable testing policies and program rules.
                 </p>
                 <p className="mb-4">
-                  Defend Denmark is not responsible for acts or omissions of a Defender which fall outside the agreed scope, breach the applicable testing policies, program rules or Defender Agreement, or which constitute unlawful conduct, fraud, gross negligence or wilful misconduct by that Defender.
+                  Defend Denmark is furthermore responsible, subject to the limitations in clause 6.3, for the acts and omissions of a Defender which fall outside the agreed scope or which breach the applicable testing policies, program rules or Defender Agreement. The customer is not required to indemnify Defend Denmark, its employees or any Defender in respect of such acts or omissions, and clause 5 does not apply to them.
                 </p>
                 <p className="mb-4">
-                  In any such case, Defend Denmark shall without undue delay suspend the Defender from the customer's program, notify the customer, preserve the relevant platform records and evidence, and — to the extent permitted by applicable law — provide the customer with the information necessary to identify and pursue that Defender.
+                  Defend Denmark is not responsible for a Defender's deliberate criminal conduct or fraud directed against the customer or a third party.
+                </p>
+                <p className="mb-4">
+                  In any case falling within this clause 6.2, Defend Denmark shall without undue delay suspend the Defender from the customer's program, notify the customer, preserve the relevant platform records and evidence, and — to the extent permitted by applicable law — provide the customer with the information necessary to identify and pursue that Defender. At the customer's request, Defend Denmark shall assign to the customer such claims as it holds against that Defender in respect of the relevant conduct, to the extent such assignment is permitted by applicable law and by the Defender Agreement.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">6.3 Limitation Amount</h3>
                 <p className="mb-4">
-                  Defend Denmark's aggregate liability for damages is limited to the amount that has been paid by the customer to Defend Denmark in the last 6 months prior to the event giving rise to the liability claim. Defend Denmark's total liability for damages can under no circumstances exceed DKK 1,000,000. A different limitation amount may be agreed in the individual customer agreement.
+                  Defend Denmark's aggregate liability for damages is limited to the amount that has been paid by the customer to Defend Denmark in the last 6 months prior to the event giving rise to the liability claim. For this purpose, that amount comprises the fees paid for the services, including subscription fees and the service fee and community fund contribution payable under clause 2.2. It does not include bounty reward amounts paid to, or passed through Defend Denmark to, security researchers, which are not fees for the services. Defend Denmark's total liability for damages can under no circumstances exceed DKK 1,000,000. A different limitation amount, including a separate limitation amount for particular categories of claim, may be agreed in the individual customer agreement.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">6.4 Scope of the Limitation</h3>
@@ -196,12 +205,15 @@ const TermsOfService = () => {
                   The limitation of liability in clause 6.3 reflects the agreed allocation of risk between the parties, having regard to the nature of the services, the controls set out in clause 6.2 and Section 17, and the level of the fees payable.
                 </p>
                 <p className="mb-4">
-                  The parties acknowledge that liability insurance in respect of the acts or omissions of independent security researchers is not available in the insurance market for services of this nature, and that providers of comparable bug bounty services do not carry such cover. These T&Cs do not oblige Defend Denmark to maintain insurance. Any insurance requirement must be expressly agreed in the individual customer agreement.
+                  The parties acknowledge that liability insurance covering the acts or omissions of independent security researchers, and professional liability or cyber insurance covering offensive security testing activities of this nature, are not available to Defend Denmark on commercially reasonable terms in the insurance market, and that providers of comparable bug bounty services do not carry such cover. These T&Cs accordingly do not oblige Defend Denmark to maintain insurance, and the limitations in clause 6.3 are set having regard to that fact. Any insurance requirement must be expressly agreed in the individual customer agreement.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">6.7 Employees</h3>
                 <p className="mb-4">
-                  The customer agrees to ensure that no claim or accusation is made against any Defend Denmark employee, who imposes or seeks to impose responsibility in relation to the service provided. If any such claim or accusation is nevertheless made, the customer guarantees to hold Defend Denmark and the relevant employee harmless from all consequences in relation to such a claim. In all events, every employee of Defend Denmark shall benefit from all exemptions, limitations of liability, provisions, conditions and rights in these T&Cs that are for the benefit of Defend Denmark as if such provision were expressly made for the employee's benefit.
+                  Subject to the following paragraph, the customer agrees to ensure that no claim or accusation is made against any Defend Denmark employee, who imposes or seeks to impose responsibility in relation to the service provided. If any such claim or accusation is nevertheless made, the customer guarantees to hold Defend Denmark and the relevant employee harmless from all consequences in relation to such a claim. In all events, every employee of Defend Denmark shall benefit from all exemptions, limitations of liability, provisions, conditions and rights in these T&Cs that are for the benefit of Defend Denmark as if such provision were expressly made for the employee's benefit.
+                </p>
+                <p className="mb-4">
+                  The undertaking and indemnity in the preceding paragraph do not apply to claims arising from testing activities carried out outside the agreed scope, from the use of testing methods prohibited by the applicable testing policies, or from any act or omission for which Defend Denmark is responsible under clause 6.2. They do not limit the customer's own claims against Defend Denmark under these T&Cs.
                 </p>
 
                 <h3 className="text-xl font-semibold mb-3">6.8 Survival</h3>
@@ -214,7 +226,7 @@ const TermsOfService = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">7. Force Majeure</h2>
                 <p className="mb-4">
-                  In the event that Defend Denmark cannot fulfill its obligations towards a customer due to a force majeure event, Defend Denmark shall be released from all its obligations during the period in which the force majeure events persist, and the customer has no right to apply default remedies towards Defend Denmark, including claims of refund, discount, damages, cancellation, and/or termination.
+                  In the event that Defend Denmark cannot fulfill its obligations towards a customer due to a force majeure event, Defend Denmark shall be released from all its obligations during the period in which the force majeure events persist, and the customer has no right to apply default remedies towards Defend Denmark, including claims of damages. Recurring fees cease to accrue in respect of services that are not delivered during that period, and any fees prepaid for services not delivered are refunded to the customer pro rata. If Defend Denmark terminates or cancels the agreement under clause 7.3, no further fees are payable by the customer and all fees prepaid for services not delivered are refunded.
                 </p>
                 <p className="mb-4">
                   A force majeure event means an event or circumstances not within Defend Denmark's control, provided that Defend Denmark could not overcome such an event by applying reasonable remedies. Without limiting the generality of the foregoing, such events and circumstances shall, e.g., include war, rebellion, sabotage, riots, epidemics, natural disasters, actions of administrative authorities in the field of foreign exchange or commercial matters, trade embargos, port embargos, general transportation barriers, prohibition of import/export, energy shortage, and similar uncontrollable events in relations with subcontractors.
@@ -255,7 +267,7 @@ const TermsOfService = () => {
                   In relation to Defend Denmark's service to a customer, Defend Denmark may gain access to any kind of equipment (hardware and software) and customer's systems. All rights to such equipment and systems belong to the customer, or third parties, as the case may be.
                 </p>
                 <p>
-                  The customer guarantees that all necessary licenses for such access by Defend Denmark are in place. The customer shall hold Defend Denmark harmless from any kind of third-party claims based on the fact that such access infringes that person's/entity's rights.
+                  The customer guarantees that all necessary licenses for such access by Defend Denmark are in place. The customer shall hold Defend Denmark harmless from third-party claims based on the fact that such access infringes that person's/entity's rights. This indemnity is given on the same terms as, and subject to the same exclusions as, the indemnity in Section 5, and accordingly does not extend to claims arising from testing activities carried out outside the agreed scope, from the use of testing methods prohibited by the applicable testing policies, or from any act or omission for which Defend Denmark is responsible under clause 6.2.
                 </p>
               </section>
 
@@ -270,6 +282,9 @@ const TermsOfService = () => {
                 </p>
                 <p className="mb-4">
                   Notwithstanding the above, Defend Denmark may publish and share aggregated and anonymised statistics and vulnerability trend data derived from its services, and may coordinate with affected vendors and with national CERT units, including DKCERT and SektorCERT, in respect of vulnerabilities which affect third-party products or national infrastructure rather than solely the customer. Such publication and coordination shall not identify the customer, disclose customer systems or contain personal data, without the customer's prior written consent.
+                </p>
+                <p className="mb-4">
+                  For the avoidance of doubt, any disclosure of a vulnerability or finding relating to the customer's own systems, assets or infrastructure requires the customer's prior written consent in each case, irrespective of whether the disclosure is aggregated, anonymised or otherwise does not name the customer. This applies to disclosure to national CERT units, including DKCERT and SektorCERT, and to any other third party, except where disclosure is required by applicable law, in which case Defend Denmark shall notify the customer in advance unless prohibited from doing so.
                 </p>
                 <p>
                   This provision shall survive the termination of the parties' agreement.
@@ -333,7 +348,7 @@ const TermsOfService = () => {
                   If Defend Denmark terminates an agreement, the customer must pay accrued fees and all Defend Denmark's costs in accordance with the agreement. The customer shall indemnify Defend Denmark for any expenses and loss of income which Defend Denmark may incur due to the customer's infringement of the agreement.
                 </p>
                 <p>
-                  Parties must be notified if either one intends to terminate the contract, both parties have 30 working days to remedy the given cause for termination. Notification of termination and its cause must be in writing and sent in a verifiable manner.
+                  Parties must be notified if either one intends to terminate the contract, and both parties have 30 days to remedy the given cause for termination, consistent with Section 13. Notification of termination and its cause must be in writing and sent in a verifiable manner.
                 </p>
               </section>
 
@@ -355,7 +370,7 @@ const TermsOfService = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-primary mb-4">13. Termination of an Agreement</h2>
                 <p className="mb-4">
-                  Provided that a notice period is not stipulated in an agreement between the parties, the notice period shall be three months. The termination shall take effect at the end of the month in which it is received, and then the termination period begins. Notification of termination must be in writing and delivered by a verifiable manner.
+                  Provided that a notice period is not stipulated in an agreement between the parties, the notice period shall be three months, and the termination shall take effect at the end of the month in which the notice is received, from which point the notice period begins. Where the individual customer agreement stipulates a notice period, that period applies instead and runs from the date on which the notice is received, unless the agreement provides otherwise. Notification of termination must be in writing and delivered by a verifiable manner.
                 </p>
                 <p>
                   Either party may terminate the agreement with immediate effect if the other party commits a material breach of these T&Cs and fails to remedy such breach within 30 days of receiving written notice.
@@ -372,7 +387,7 @@ const TermsOfService = () => {
                   Before deleting any customer data, Defend Denmark shall provide the customer with a period of at least 30 days in which to export its vulnerability reports, findings, testing records and remediation information in a commonly used and readable format. Following that period, Defend Denmark shall securely delete or, at the customer's request, return the customer data, except to the extent retention is required by applicable law. Defend Denmark shall confirm such deletion in writing on request.
                 </p>
                 <p>
-                  Any work that Defend Denmark carries out upon termination is charged in accordance with the Company's price list, unless otherwise agreed.
+                  Defend Denmark makes no charge for providing the customer with access to export its data, for the return of customer data, or for confirming deletion, under this Section 14. Any other work that Defend Denmark carries out upon termination at the customer's request is charged in accordance with the Company's price list, subject to the prior written approval requirement in clause 2.4, unless otherwise agreed.
                 </p>
               </section>
 
@@ -419,7 +434,11 @@ const TermsOfService = () => {
                   <li>Payment terms for bounty rewards</li>
                   <li>Confidentiality and non-disclosure obligations</li>
                   <li>Prohibition of unauthorized access or testing outside approved scope</li>
+                  <li>Declaration of conflicts of interest in relation to a customer program</li>
                 </ul>
+                <p className="mb-4">
+                  Before gaining access to a customer program, each Defender must declare any current or former employment, contractual, governance or ownership relationship with the customer, and any close personal relationship with an individual holding such a relationship. A customer may require that named individuals, or individuals falling within categories specified in the individual customer agreement or the program rules, are excluded from its program. Defend Denmark shall exclude any such Defender from the program and from eligibility for any reward under it. Defend Denmark's obligation extends to acting on the declarations made and on information otherwise available to it, and it does not warrant the completeness of a Defender's own declaration.
+                </p>
                 <p>
                   The Defender Agreement and the program rules govern the relationship between Defend Denmark and the Defender. They are complementary to these T&Cs and do not confer rights on, or limit the rights of, customers. The rights and obligations between Defend Denmark and its customers are governed exclusively by these T&Cs and the parties' agreement.
                 </p>
