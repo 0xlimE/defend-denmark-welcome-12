@@ -19,7 +19,7 @@ const GdprRole = () => {
               {/* Header */}
               <div className="mb-8">
                 <h1 className="text-3xl font-bold text-primary mb-2">Defend Denmark ApS – Our Role Under GDPR</h1>
-                <p className="text-muted-foreground">Version 2.0 • Effective Date: 18 August 2026</p>
+                <p className="text-muted-foreground">Version 2.0 • Effective Date: 13 October 2026</p>
                 <p className="text-muted-foreground text-sm mt-2">
                   Related documents: <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> · <a href="/terms-of-service" className="text-primary hover:underline">Terms of Service</a>
                 </p>
@@ -402,7 +402,7 @@ const GdprRole = () => {
                 <p className="mt-4">
                   Supervisory Authority: Datatilsynet (Danish Data Protection Agency) – <a href="https://www.datatilsynet.dk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.datatilsynet.dk</a>
                 </p>
-                <p className="mt-6 text-muted-foreground text-sm">Last updated: 18 August 2026</p>
+                <p className="mt-6 text-muted-foreground text-sm">Last updated: 13 October 2026</p>
               </section>
             </div>
           </div>

@@ -19,7 +19,7 @@ const TermsOfService = () => {
               {/* Header */}
               <div className="mb-8">
                 <h1 className="text-3xl font-bold text-primary mb-2">Defend Denmark ApS – General Terms and Conditions</h1>
-                <p className="text-muted-foreground">Version 2.0 • Effective Date: 18 August 2026</p>
+                <p className="text-muted-foreground">Version 2.0 • Effective Date: 13 October 2026</p>
                 <p className="text-muted-foreground text-sm mt-2">
                   Related documents: <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> · <a href="/data-protection" className="text-primary hover:underline">Our Role Under GDPR</a>
                 </p>
@@ -453,7 +453,7 @@ const TermsOfService = () => {
                   <li>Postal: Defend Denmark ApS, Nørrebrogade 45D 4TH, 2200 KBH N, Denmark</li>
                   <li>CVR: 45824578</li>
                 </ul>
-                <p className="mt-6 text-muted-foreground text-sm">Last updated: 18 August 2026</p>
+                <p className="mt-6 text-muted-foreground text-sm">Last updated: 13 October 2026</p>
               </section>
             </div>
           </div>
