@@ -237,3 +237,202 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+/* ---------------------------------------------------------------------------
+   Print / PDF output for the legal documents (Terms, Privacy, GDPR Role).
+   Produces a clean, attachable copy: app chrome removed, serif body text,
+   a formal header stamped with the date the PDF was produced.
+--------------------------------------------------------------------------- */
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm 18mm;
+  }
+
+  /* Strip the app shell. */
+  nav,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10.5pt;
+  }
+
+  body * {
+    box-shadow: none !important;
+  }
+
+  /* The page wrappers carry bg-muted / bg-background; force them white so the
+     printed sheet has no grey ground or visible panel edge. */
+  #root,
+  #root > div,
+  #root > div > div {
+    background: #fff !important;
+  }
+
+  /* Neutralise layout wrappers so the document fills the page. */
+  main {
+    padding-top: 0 !important;
+  }
+
+  .prose {
+    max-width: none !important;
+  }
+
+  /* The on-screen hero and title block are replaced by .print-doc-header. */
+  main > section:first-of-type,
+  .print-replaced-header {
+    display: none !important;
+  }
+
+  /* Document header -------------------------------------------------------- */
+  .print-doc-header {
+    border-bottom: 1.5pt solid #000;
+    padding-bottom: 8pt;
+    margin-bottom: 18pt;
+  }
+
+  .print-doc-header .print-org {
+    font-size: 9pt;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 6pt;
+  }
+
+  .print-doc-header .print-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17pt;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000;
+    margin: 0 0 8pt;
+  }
+
+  .print-doc-header .print-meta,
+  .print-doc-header .print-source {
+    font-size: 9pt;
+    color: #000;
+    margin: 0 0 2pt;
+  }
+
+  .print-doc-header .print-source {
+    color: #444;
+    margin-top: 6pt;
+  }
+
+  /* Body ------------------------------------------------------------------- */
+  .prose,
+  .prose p,
+  .prose li {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #000;
+    line-height: 1.5;
+  }
+
+  .prose p,
+  .prose li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #000 !important;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .prose h2 {
+    font-size: 13pt;
+    margin-top: 16pt;
+    margin-bottom: 6pt;
+    border-bottom: 0.5pt solid #999;
+    padding-bottom: 3pt;
+  }
+
+  .prose h3 {
+    font-size: 11pt;
+    margin-top: 11pt;
+    margin-bottom: 4pt;
+  }
+
+  .prose section {
+    break-inside: auto;
+    margin-bottom: 10pt;
+  }
+
+  /* Long blocks may flow across pages, but never split a row or list item;
+     a table carried onto a new page repeats its header. */
+  .prose table,
+  .prose ul,
+  .prose ol {
+    break-inside: auto;
+  }
+
+  .prose thead {
+    display: table-header-group;
+  }
+
+  .prose tr,
+  .prose td,
+  .prose th,
+  .prose li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Callouts are short and should stay whole. */
+  .prose .border-l-4 {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Horizontal scroll wrappers must not clip in print. */
+  .prose .overflow-x-auto {
+    overflow: visible !important;
+  }
+
+  .prose .border-l-4 {
+    border-left: 2pt solid #000 !important;
+    background: #f4f4f4 !important;
+    padding: 8pt 10pt !important;
+  }
+
+  /* Links print as plain text; internal links get their full address. */
+  .prose a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  .prose a[href^="/"]::after {
+    content: " (defenddenmark.dk" attr(href) ")";
+    font-size: 8.5pt;
+    color: #444;
+  }
+
+  .prose a[href^="mailto:"]::after,
+  .prose a[href^="http"]::after {
+    content: "";
+  }
+
+  /* Muted greys are unreadable in print. */
+  .text-muted-foreground {
+    color: #333 !important;
+  }
+}

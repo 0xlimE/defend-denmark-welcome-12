@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHero } from "@/components/page-hero";
+import { PrintHeader } from "@/components/print-header";
 
 const TermsOfService = () => {
   return (
@@ -16,8 +17,15 @@ const TermsOfService = () => {
 
           <div className="container mx-auto px-4 py-12 max-w-4xl">
             <div className="prose prose-lg max-w-none">
+              <PrintHeader
+                title="Defend Denmark ApS – General Terms and Conditions"
+                version="Version 2.0"
+                effectiveDate="13 October 2026"
+                path="/terms-of-service"
+              />
+
               {/* Header */}
-              <div className="mb-8">
+              <div className="mb-8 print-replaced-header">
                 <h1 className="text-3xl font-bold text-primary mb-2">Defend Denmark ApS – General Terms and Conditions</h1>
                 <p className="text-muted-foreground">Version 2.0 • Effective Date: 13 October 2026</p>
                 <p className="text-muted-foreground text-sm mt-2">
