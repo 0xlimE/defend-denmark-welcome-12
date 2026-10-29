@@ -322,6 +322,13 @@ All colors MUST be HSL.
     margin: 0 0 8pt;
   }
 
+  .print-doc-header .print-schedule {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 6pt;
+  }
+
   .print-doc-header .print-meta,
   .print-doc-header .print-source {
     font-size: 9pt;

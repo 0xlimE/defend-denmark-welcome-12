@@ -22,12 +22,14 @@ const TermsOfService = () => {
                 version="Version 2.0"
                 effectiveDate="13 October 2026"
                 path="/terms-of-service"
+                schedule="Schedule 2"
               />
 
               {/* Header */}
               <div className="mb-8 print-replaced-header">
                 <h1 className="text-3xl font-bold text-primary mb-2">Defend Denmark ApS – General Terms and Conditions</h1>
                 <p className="text-muted-foreground">Version 2.0 • Effective Date: 13 October 2026</p>
+                <p className="text-muted-foreground text-sm font-semibold mt-1">Also referenced as Schedule 2</p>
                 <p className="text-muted-foreground text-sm mt-2">
                   Related documents: <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> · <a href="/data-protection" className="text-primary hover:underline">Our Role Under GDPR</a>
                 </p>

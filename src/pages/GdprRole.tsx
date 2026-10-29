@@ -22,12 +22,14 @@ const GdprRole = () => {
                 version="Version 2.0"
                 effectiveDate="13 October 2026"
                 path="/data-protection"
+                schedule="Schedule 4"
               />
 
               {/* Header */}
               <div className="mb-8 print-replaced-header">
                 <h1 className="text-3xl font-bold text-primary mb-2">Defend Denmark ApS – Our Role Under GDPR</h1>
                 <p className="text-muted-foreground">Version 2.0 • Effective Date: 13 October 2026</p>
+                <p className="text-muted-foreground text-sm font-semibold mt-1">Also referenced as Schedule 4</p>
                 <p className="text-muted-foreground text-sm mt-2">
                   Related documents: <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> · <a href="/terms-of-service" className="text-primary hover:underline">Terms of Service</a>
                 </p>

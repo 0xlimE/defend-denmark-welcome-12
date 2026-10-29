@@ -10,6 +10,8 @@ interface PrintHeaderProps {
   effectiveDate: string;
   /** Site path of this document, e.g. "/terms-of-service" */
   path: string;
+  /** Contract schedule reference, e.g. "Schedule 2" */
+  schedule?: string;
 }
 
 const formatPrintDate = (d: Date) =>
@@ -21,7 +23,7 @@ const formatPrintDate = (d: Date) =>
  * to the DOM imperatively so it is correct whether printing is triggered by the
  * button or by the browser's own print command.
  */
-export const PrintHeader = ({ title, version, effectiveDate, path }: PrintHeaderProps) => {
+export const PrintHeader = ({ title, version, effectiveDate, path, schedule }: PrintHeaderProps) => {
   const dateRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -54,6 +56,7 @@ export const PrintHeader = ({ title, version, effectiveDate, path }: PrintHeader
       <div className="print-only print-doc-header">
         <p className="print-org">Defend Denmark ApS · CVR 45824578</p>
         <h1 className="print-title">{title}</h1>
+        {schedule && <p className="print-schedule">Also referenced as {schedule}</p>}
         <p className="print-meta">
           {version} · Effective Date: {effectiveDate}
         </p>
