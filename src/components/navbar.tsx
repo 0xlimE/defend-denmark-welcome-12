@@ -15,15 +15,33 @@ export const Navbar = () => {
   return (
     <nav className="w-full bg-background sticky top-0 z-50 shadow-md border-b">
       <div className="max-w-6xl mx-auto px-4 h-12 flex items-center">
-        {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity" onClick={closeMenu}>
-          <img 
-            src="/site-uploads/2e69e9b4-8634-47be-92ca-4cc22f1b595e.png" 
-            alt="defend Denmark logo" 
-            className="w-8 h-8"
-          />
-          <span className="text-lg font-bold text-primary">defend Denmark</span>
-        </Link>
+        {/* Logo + Powered by hackpod */}
+        <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity" onClick={closeMenu}>
+            <img
+              src="/site-uploads/2e69e9b4-8634-47be-92ca-4cc22f1b595e.png"
+              alt="defend Denmark logo"
+              className="w-8 h-8"
+            />
+            <span className="flex flex-col text-sm font-bold text-primary leading-tight">
+              <span>defend</span>
+              <span>Denmark</span>
+            </span>
+          </Link>
+          <a
+            href="https://defendthenordics.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-2 hover:opacity-80 transition-opacity"
+            aria-label="Powered by hackpod"
+          >
+            <span className="h-7 w-px bg-border" aria-hidden="true" />
+            <span className="flex flex-col items-start gap-0.5">
+              <span className="text-[10px] leading-none text-muted-foreground whitespace-nowrap">Powered by</span>
+              <img src="/site-uploads/hackpod-logo.png" alt="hackpod" className="h-3 w-auto" />
+            </span>
+          </a>
+        </div>
 
         {/* Desktop Navigation - Centered */}
         <div className="hidden lg:flex items-center justify-center flex-1">
