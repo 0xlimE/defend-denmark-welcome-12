@@ -8,10 +8,12 @@ interface PageHeroProps {
     alt: string;
     maxHeight?: string;
   };
+  /** "bottom" (default) seats illustrations on the hero's lower edge; "center" suits logos. */
+  imageAlign?: "bottom" | "center";
   children?: ReactNode;
 }
 
-export const PageHero = ({ title, subtitle, image, children }: PageHeroProps) => {
+export const PageHero = ({ title, subtitle, image, imageAlign = "bottom", children }: PageHeroProps) => {
   return (
     <section className="pt-12 md:pt-16 pb-8 md:pb-0 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden min-h-[350px] md:min-h-[300px] lg:min-h-[320px]">
       <div className="absolute inset-0 opacity-20">
@@ -31,7 +33,16 @@ export const PageHero = ({ title, subtitle, image, children }: PageHeroProps) =>
             </p>
             {children}
           </div>
-          {image && (
+          {image && imageAlign === "center" && (
+            <div className="hidden md:flex justify-center items-center order-2">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className={`w-auto object-contain ${image.maxHeight || 'md:max-h-56'}`}
+              />
+            </div>
+          )}
+          {image && imageAlign === "bottom" && (
             <div className="flex justify-center items-end md:items-end md:relative order-2 flex-1">
               <div className="w-full h-48 md:h-auto flex justify-center items-end md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2">
                 <img 

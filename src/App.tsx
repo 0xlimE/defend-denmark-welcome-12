@@ -19,6 +19,7 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import GdprRole from "./pages/GdprRole";
+import AttackSurfaceMapping from "./pages/AttackSurfaceMapping";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,8 @@ const App = () => (
             <Route path="/compliance/nis2" element={<Nis2 />} />
             <Route path="/compliance/cra" element={<Cra />} />
             <Route path="/community-fund" element={<CommunityFundPage />} />
+            <Route path="/attack-surface-mapping" element={<AttackSurfaceMapping />} />
+            <Route path="/ASM" element={<Navigate to="/attack-surface-mapping" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />

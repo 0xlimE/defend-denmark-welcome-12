@@ -67,6 +67,7 @@ export const Footer = () => {
               <li><Link to="/companies" className="hover:text-primary transition-colors">{t('footer.forCompanies')}</Link></li>
               <li><Link to="/bug-bounty" className="hover:text-primary transition-colors">Bug Bounty</Link></li>
               <li><Link to="/compliance" className="hover:text-primary transition-colors">{t('nav.compliance')}</Link></li>
+              <li><Link to="/attack-surface-mapping" className="hover:text-primary transition-colors">{t('footer.asm')}</Link></li>
             </ul>
           </div>
 
