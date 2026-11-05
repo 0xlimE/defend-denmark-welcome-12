@@ -90,7 +90,7 @@ const AttackSurfaceMapping = () => {
         name: "AI Defender test",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "1000",
+          price: "1250",
           priceCurrency: "DKK",
           unitText: "asset",
           valueAddedTaxIncluded: false,
