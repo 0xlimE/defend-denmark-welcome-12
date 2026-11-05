@@ -29,7 +29,7 @@ export const Navbar = () => {
             </span>
           </Link>
           <a
-            href="https://defendthenordics.tech"
+            href="https://hackpod.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 hover:opacity-80 transition-opacity"
