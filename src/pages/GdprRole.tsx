@@ -110,7 +110,7 @@ const GdprRole = () => {
               <section className="mb-8">
                 <h3 className="text-2xl font-semibold text-primary mb-4">A.2 Definitions and scope</h3>
                 <p className="mb-4">
-                  <strong>A.2.1</strong> This document applies to Defend Denmark ApS, CVR 45824578, Nørrebrogade 45D 4TH, 2200 KBH N ("Defend Denmark").
+                  <strong>A.2.1</strong> This document applies to Defend Denmark ApS, CVR 45824578, Frederikskaj 10, 2450 København ("Defend Denmark").
                 </p>
                 <p className="mb-4">
                   <strong>A.2.2</strong> All reference to the "Data Protection Act" shall mean the Danish Data Protection Act (Databeskyttelsesloven) and Regulation (EU) 2016/679 of the European Parliament and the Council of 27 April 2016, on the protection of natural persons regarding the processing of personal data and on the free movement of such data, which entered into force on 25 May 2018 ("GDPR").
@@ -406,7 +406,7 @@ const GdprRole = () => {
                 <p className="mb-4">Questions, requests or complaints:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Email: <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
-                  <li>Postal: Defend Denmark ApS, Nørrebrogade 45D 4TH, 2200 KBH N</li>
+                  <li>Postal: Defend Denmark ApS, Frederikskaj 10, 2450 København</li>
                   <li>CVR: 45824578</li>
                 </ul>
                 <p className="mt-4">

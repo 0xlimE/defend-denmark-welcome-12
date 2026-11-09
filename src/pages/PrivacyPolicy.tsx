@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
                 <p className="mb-2">This Privacy Policy explains how we process personal data for which we are the data controller:</p>
                 <ul className="list-disc pl-6 space-y-2 mb-4">
                   <li><strong>Defend Denmark ApS</strong>, CVR 45824578</li>
-                  <li>Nørrebrogade 45D 4TH, 2200 København N, Denmark</li>
+                  <li>Frederikskaj 10, 2450 København, Denmark</li>
                   <li><a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
                 </ul>
                 <p>
@@ -239,7 +239,7 @@ const PrivacyPolicy = () => {
                 <p className="mb-4">Questions, requests or complaints:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Email: <a href="mailto:privacy@defenddenmark.dk" className="text-primary hover:underline">privacy@defenddenmark.dk</a></li>
-                  <li>Postal: Defend Denmark ApS, Nørrebrogade 45D 4TH, 2200 KBH N, Denmark</li>
+                  <li>Postal: Defend Denmark ApS, Frederikskaj 10, 2450 København, Denmark</li>
                   <li>CVR: 45824578</li>
                 </ul>
                 <p className="mt-4">
